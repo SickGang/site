@@ -19,37 +19,56 @@
     <header class="header">
         <div class="container">
             <div class="row align-items-center justify-content-between">
-                <nav class="col-5">
-                    <ul class="header-nav row">
-                        <li><a href="#!">Lorem</a></li>
-                        <li><a href="#!">Lorem</a></li>
-                        <li><a href="#!">Lorem</a></li>
-                        <li><a href="#!">Lorem</a></li>
+                <nav class="col-lg-5 col-sm-2 col-3">
+                    <ul class="header-nav row d-none d-lg-flex">
+                        <li><a href="#hero">Lorem</a></li>
+                        <li><a href="#company">Lorem</a></li>
+                        <li><a href="#team">Lorem</a></li>
+                        <li><a href="#support">Lorem</a></li>
+                        <li><a href="#donate">Lorem</a></li>
                     </ul>
+                    <div class="dropdown show d-block d-lg-none">
+                        <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Menu
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                          <a class="dropdown-item" href="#hero">Lorem</a>
+                          <a class="dropdown-item" href="#company">Lorem</a>
+                          <a class="dropdown-item" href="#team">Lorem</a>
+                          <a class="dropdown-item" href="#support">Lorem</a>
+                          <a class="dropdown-item" href="#donate    ">Lorem</a>
+                        </div>
+                      </div>
                 </nav>
-                <div class="header-img col-5">
+                <div class="header-img col-sm-3 col-7">
                     <img src="img/default.jpg" alt="">
                 </div>
-                <!-- <div class="header-share col-2 text-right">
-                    <a href="#!"><i class="fas fa-share-square"></i></a>
-                </div> -->
-                <div class="header-share">
-                    <ul class="row">
-                        <li><a href=""><i class="fab fa-vk"></i></a></li>
-                        <li><a href=""><i class="fab fa-twitter"></i></a></li>
-                        <li><a href=""><i class="fab fa-facebook"></i></a></li>
-                        <li><a href=""><i class="fab fa-viber"></i></a></li>                                            
-                        <li><a href=""><i class="fab fa-telegram"></i></a></li>
-                        <li><a href=""><i class="fab fa-whatsapp"></i></a></li>
-                    </ul>
+                <div class="header-share col-lg-1 col-sm-2 col-3 d-sm-block d-none">
+                    <div>
+                        <div class="header-share-btn" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Lorem
+                        </div>
+                    </div>
+                    <div class="header-share_links dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        Lorem, ipsum dolor
+                        <ul class="row mt-2">
+                            <li><a href=""><i class="fab fa-vk"></i></a></li>
+                            <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                            <li><a href=""><i class="fab fa-facebook"></i></a></li>
+                            <li><a href=""><i class="fab fa-viber"></i></a></li>                                            
+                            <li><a href=""><i class="fab fa-telegram"></i></a></li>
+                            <li><a href=""><i class="fab fa-whatsapp"></i></a></li>
+                        </ul>
+                    </div>
                 </div>
+                
             </div>
         </div>
     </header>
     <main>
         <div class="container">
-            <section class="hero pt-5 pb-5">
-                <div class="hero-description-wrapper">
+            <section class="hero pt-5 pb-5 row" id="hero">
+                <div class="hero-description-wrapper col-12 col-md-6">
                     <div class="hero-description">
                         <h2 class="display-4">Lorem ipsum dolor sit amet!</h2>
                         <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, cumque soluta? Fuga, dolorum voluptatem. Blanditiis eveniet temporibus nisi numquam sint!</p>
@@ -58,7 +77,7 @@
                         Lorem, ipsum.
                     </div>
                 </div>
-                <div class="hero-video-wrapper">
+                <div class="hero-video-wrapper col-12 col-md-6 mt-3 mt-md-0 p-0">
                     <div class="hero-video">
                         <a href="">
                             <i class="fas fa-play"></i>
@@ -66,8 +85,8 @@
                     </div>
                 </div>
             </section>
-            <section class="company">
-                <div class="company-wrapper pt-4 pb-4">
+            <section class="company" id="company">
+                <div class="company-wrapper pt-4">
                     <div class="company-title text-center">
                         <h1 class="display-4">Lorem ipsum dolor</h1>
                     </div>
@@ -75,8 +94,8 @@
                         <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis dolor nesciunt, aliquam voluptatibus illum cupiditate? Quidem repellat tenetur nostrum obcaecati quaerat fugit voluptate reiciendis, molestias, incidunt veniam ratione, assumenda exercitationem!</p>
                     </div>
                     <div class="company-accordion mt-4">
-                        <ul class="row justify-content-between">
-                            <li class="col-5">
+                        <ul class="d-flex flex-column justify-content-between">
+                            <li>
                                 <a href="#!">Lorem ipsum dolor sit</a><i class="fas fa-chevron-down"></i>
                                 <div class="company-accordion_item-text">
                                     <p class="lead">
@@ -85,7 +104,7 @@
                                     </p>
                                 </div>
                             </li>
-                            <li class="col-5">
+                            <li>
                                 <a href="#!">Lorem ipsum dolor sit</a><i class="fas fa-chevron-down"></i>
                                 <div class="company-accordion_item-text">
                                     <p class="lead">
@@ -94,7 +113,7 @@
                                     </p>
                                 </div>
                             </li>
-                            <li class="col-5">
+                            <li>
                                 <a href="#!">Lorem ipsum dolor sit</a><i class="fas fa-chevron-down"></i>
                                 <div class="company-accordion_item-text">
                                     <p class="lead">
@@ -103,7 +122,7 @@
                                     </p>
                                 </div>
                             </li>
-                            <li class="col-5">
+                            <li>
                                 <a href="#!">Lorem ipsum dolor sit</a><i class="fas fa-chevron-down"></i>
                                 <div class="company-accordion_item-text">
                                     <p class="lead">
@@ -112,7 +131,7 @@
                                     </p>
                                 </div>
                             </li>
-                            <li class="col-5">
+                            <li>
                                 <a href="#!">Lorem ipsum dolor sit</a><i class="fas fa-chevron-down"></i>
                                 <div class="company-accordion_item-text">
                                     <p class="lead">
@@ -121,7 +140,7 @@
                                     </p>
                                 </div>
                             </li>
-                            <li class="col-5">
+                            <li>
                                 <a href="#!">Lorem ipsum dolor sit</a><i class="fas fa-chevron-down"></i>
                                 <div class="company-accordion_item-text">
                                     <p class="lead">
@@ -130,7 +149,7 @@
                                     </p>
                                 </div>
                             </li>
-                            <li class="col-5">
+                            <li>
                                 <a href="#!">Lorem ipsum dolor sit</a><i class="fas fa-chevron-down"></i>
                                 <div class="company-accordion_item-text">
                                     <p class="lead">
@@ -139,7 +158,7 @@
                                     </p>
                                 </div>
                             </li>
-                            <li class="col-5">
+                            <li>
                                 <a href="#!">Lorem ipsum dolor sit</a><i class="fas fa-chevron-down"></i>
                                 <div class="company-accordion_item-text">
                                     <p class="lead">
@@ -152,298 +171,55 @@
                     </div>
                 </div>
             </section>
-            <section class="team pb-4">
+            <section class="team pb-4" id="team">
                 <div class="team-wrapper">
                     <div class="team-title text-center pt-4 pb-4">
                         <h1 class="display-4">Lorem, ipsum dolor.</h1>
                     </div>
-                    <div class="team-items row">
-                        <div class="team-item col-3 mb-3">
-                            <div class="team-item_video">
+                    <div class="team-items d-flex flex-column">
+                        <div class="team-item mb-3 row">
+                            <div class="team-item_video mr-md-5 mr-0">
                                 <a href="">
                                     <i class="fas fa-play"></i>
                                 </a>
                             </div>
-                            <div class="team-item_name mt-2">
-                                Lorem, ipsum.
-                            </div>
-                            <div class="team-item_district">
-                                Lorem, ipsum dolor.
-                            </div>
-                            <div class="team-item_contacts d-flex flex-column mt-3">    
-                                <div><i class="far fa-envelope mr-2"></i><a href="">mail@mail.ru</a></div>
-                                <div><i class="fas fa-phone mr-2 mt-2"></i><a href="">+7 999 999 99 99</a></div>
-                            </div>
-                            <div class="team-item_links d-flex justify-content-center mt-2">
-                                <ul class="row">
-                                    <li><a href=""><i class="fab fa-vk"></i></a></li>
-                                    <li><a href=""><i class="fab fa-twitter"></i></a></li>
-                                    <li><a href=""><i class="fab fa-facebook"></i></a></li>
-                                    <li><a href=""><i class="fab fa-viber"></i></a></li>                                            
-                                    <li><a href=""><i class="fab fa-telegram"></i></a></li>
-                                    <li><a href=""><i class="fab fa-whatsapp"></i></a></li>
-                                </ul>
-                            </div>
-                            <div class="team-item_btn mt-2">
-                                <div class="team-item_btn-show-more text-center">
+                            <div class="team-item_info">
+                                <div class="team-item_name mt-2">
                                     Lorem, ipsum.
                                 </div>
-                                <div class="team-item_btn-help mt-3 text-center">
-                                    Lorem
+                                <div class="team-item_district">
+                                    Lorem, ipsum dolor.
                                 </div>
-                            </div>
-                        </div>
-                        <div class="team-item col-3 mb-3">
-                            <div class="team-item_video">
-                                <a href="">
-                                    <i class="fas fa-play"></i>
-                                </a>
-                            </div>
-                            <div class="team-item_name mt-2">
-                                Lorem, ipsum.
-                            </div>
-                            <div class="team-item_district">
-                                Lorem, ipsum dolor.
-                            </div>
-                            <div class="team-item_contacts d-flex flex-column mt-3">    
-                                <div><i class="far fa-envelope mr-2"></i><a href="">mail@mail.ru</a></div>
-                                <div><i class="fas fa-phone mr-2 mt-2"></i><a href="">+7 999 999 99 99</a></div>
-                            </div>
-                            <div class="team-item_links d-flex justify-content-center mt-2">
-                                <ul class="row">
-                                    <li><a href=""><i class="fab fa-vk"></i></a></li>
-                                    <li><a href=""><i class="fab fa-twitter"></i></a></li>
-                                    <li><a href=""><i class="fab fa-facebook"></i></a></li>
-                                    <li><a href=""><i class="fab fa-viber"></i></a></li>                                            
-                                    <li><a href=""><i class="fab fa-telegram"></i></a></li>
-                                    <li><a href=""><i class="fab fa-whatsapp"></i></a></li>
-                                </ul>
-                            </div>
-                            <div class="team-item_btn mt-2">
-                                <div class="team-item_btn-show-more text-center">
-                                    Lorem, ipsum.
+                                <div class="team-item_contacts d-flex flex-column mt-3">    
+                                    <div><i class="far fa-envelope mr-2"></i><a href="">mail@mail.ru</a></div>
+                                    <div><i class="fas fa-phone mr-2 mt-2"></i><a href="">+7 999 999 99 99</a></div>
                                 </div>
-                                <div class="team-item_btn-help mt-3 text-center">
-                                    Lorem
+                                <div class="team-item_links d-flex justify-content-center mt-2">
+                                    <ul class="row">
+                                        <li><a href=""><i class="fab fa-vk"></i></a></li>
+                                        <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                                        <li><a href=""><i class="fab fa-facebook"></i></a></li>
+                                        <li><a href=""><i class="fab fa-viber"></i></a></li>                                            
+                                        <li><a href=""><i class="fab fa-telegram"></i></a></li>
+                                        <li><a href=""><i class="fab fa-whatsapp"></i></a></li>
+                                    </ul>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="team-item col-3 mb-3">
-                            <div class="team-item_video">
-                                <a href="">
-                                    <i class="fas fa-play"></i>
-                                </a>
-                            </div>
-                            <div class="team-item_name mt-2">
-                                Lorem, ipsum.
-                            </div>
-                            <div class="team-item_district">
-                                Lorem, ipsum dolor.
-                            </div>
-                            <div class="team-item_contacts d-flex flex-column mt-3">    
-                                <div><i class="far fa-envelope mr-2"></i><a href="">mail@mail.ru</a></div>
-                                <div><i class="fas fa-phone mr-2 mt-2"></i><a href="">+7 999 999 99 99</a></div>
-                            </div>
-                            <div class="team-item_links d-flex justify-content-center mt-2">
-                                <ul class="row">
-                                    <li><a href=""><i class="fab fa-vk"></i></a></li>
-                                    <li><a href=""><i class="fab fa-twitter"></i></a></li>
-                                    <li><a href=""><i class="fab fa-facebook"></i></a></li>
-                                    <li><a href=""><i class="fab fa-viber"></i></a></li>                                            
-                                    <li><a href=""><i class="fab fa-telegram"></i></a></li>
-                                    <li><a href=""><i class="fab fa-whatsapp"></i></a></li>
-                                </ul>
-                            </div>
-                            <div class="team-item_btn mt-2">
-                                <div class="team-item_btn-show-more text-center">
-                                    Lorem, ipsum.
-                                </div>
-                                <div class="team-item_btn-help mt-3 text-center">
-                                    Lorem
-                                </div>
-                            </div>
-                        </div>
-                        <div class="team-item col-3 mb-3">
-                            <div class="team-item_video">
-                                <a href="">
-                                    <i class="fas fa-play"></i>
-                                </a>
-                            </div>
-                            <div class="team-item_name mt-2">
-                                Lorem, ipsum.
-                            </div>
-                            <div class="team-item_district">
-                                Lorem, ipsum dolor.
-                            </div>
-                            <div class="team-item_contacts d-flex flex-column mt-3">    
-                                <div><i class="far fa-envelope mr-2"></i><a href="">mail@mail.ru</a></div>
-                                <div><i class="fas fa-phone mr-2 mt-2"></i><a href="">+7 999 999 99 99</a></div>
-                            </div>
-                            <div class="team-item_links d-flex justify-content-center mt-2">
-                                <ul class="row">
-                                    <li><a href=""><i class="fab fa-vk"></i></a></li>
-                                    <li><a href=""><i class="fab fa-twitter"></i></a></li>
-                                    <li><a href=""><i class="fab fa-facebook"></i></a></li>
-                                    <li><a href=""><i class="fab fa-viber"></i></a></li>                                            
-                                    <li><a href=""><i class="fab fa-telegram"></i></a></li>
-                                    <li><a href=""><i class="fab fa-whatsapp"></i></a></li>
-                                </ul>
-                            </div>
-                            <div class="team-item_btn mt-2">
-                                <div class="team-item_btn-show-more text-center">
-                                    Lorem, ipsum.
-                                </div>
-                                <div class="team-item_btn-help mt-3 text-center">
-                                    Lorem
-                                </div>
-                            </div>
-                        </div>
-                        <div class="team-item col-3 mb-3">
-                            <div class="team-item_video">
-                                <a href="">
-                                    <i class="fas fa-play"></i>
-                                </a>
-                            </div>
-                            <div class="team-item_name mt-2">
-                                Lorem, ipsum.
-                            </div>
-                            <div class="team-item_district">
-                                Lorem, ipsum dolor.
-                            </div>
-                            <div class="team-item_contacts d-flex flex-column mt-3">    
-                                <div><i class="far fa-envelope mr-2"></i><a href="">mail@mail.ru</a></div>
-                                <div><i class="fas fa-phone mr-2 mt-2"></i><a href="">+7 999 999 99 99</a></div>
-                            </div>
-                            <div class="team-item_links d-flex justify-content-center mt-2">
-                                <ul class="row">
-                                    <li><a href=""><i class="fab fa-vk"></i></a></li>
-                                    <li><a href=""><i class="fab fa-twitter"></i></a></li>
-                                    <li><a href=""><i class="fab fa-facebook"></i></a></li>
-                                    <li><a href=""><i class="fab fa-viber"></i></a></li>                                            
-                                    <li><a href=""><i class="fab fa-telegram"></i></a></li>
-                                    <li><a href=""><i class="fab fa-whatsapp"></i></a></li>
-                                </ul>
-                            </div>
-                            <div class="team-item_btn mt-2">
-                                <div class="team-item_btn-show-more text-center">
-                                    Lorem, ipsum.
-                                </div>
-                                <div class="team-item_btn-help mt-3 text-center">
-                                    Lorem
-                                </div>
-                            </div>
-                        </div>
-                        <div class="team-item col-3 mb-3">
-                            <div class="team-item_video">
-                                <a href="">
-                                    <i class="fas fa-play"></i>
-                                </a>
-                            </div>
-                            <div class="team-item_name mt-2">
-                                Lorem, ipsum.
-                            </div>
-                            <div class="team-item_district">
-                                Lorem, ipsum dolor.
-                            </div>
-                            <div class="team-item_contacts d-flex flex-column mt-3">    
-                                <div><i class="far fa-envelope mr-2"></i><a href="">mail@mail.ru</a></div>
-                                <div><i class="fas fa-phone mr-2 mt-2"></i><a href="">+7 999 999 99 99</a></div>
-                            </div>
-                            <div class="team-item_links d-flex justify-content-center mt-2">
-                                <ul class="row">
-                                    <li><a href=""><i class="fab fa-vk"></i></a></li>
-                                    <li><a href=""><i class="fab fa-twitter"></i></a></li>
-                                    <li><a href=""><i class="fab fa-facebook"></i></a></li>
-                                    <li><a href=""><i class="fab fa-viber"></i></a></li>                                            
-                                    <li><a href=""><i class="fab fa-telegram"></i></a></li>
-                                    <li><a href=""><i class="fab fa-whatsapp"></i></a></li>
-                                </ul>
-                            </div>
-                            <div class="team-item_btn mt-2">
-                                <div class="team-item_btn-show-more text-center">
-                                    Lorem, ipsum.
-                                </div>
-                                <div class="team-item_btn-help mt-3 text-center">
-                                    Lorem
-                                </div>
-                            </div>
-                        </div>
-                        <div class="team-item col-3 mb-3">
-                            <div class="team-item_video">
-                                <a href="">
-                                    <i class="fas fa-play"></i>
-                                </a>
-                            </div>
-                            <div class="team-item_name mt-2">
-                                Lorem, ipsum.
-                            </div>
-                            <div class="team-item_district">
-                                Lorem, ipsum dolor.
-                            </div>
-                            <div class="team-item_contacts d-flex flex-column mt-3">    
-                                <div><i class="far fa-envelope mr-2"></i><a href="">mail@mail.ru</a></div>
-                                <div><i class="fas fa-phone mr-2 mt-2"></i><a href="">+7 999 999 99 99</a></div>
-                            </div>
-                            <div class="team-item_links d-flex justify-content-center mt-2">
-                                <ul class="row">
-                                    <li><a href=""><i class="fab fa-vk"></i></a></li>
-                                    <li><a href=""><i class="fab fa-twitter"></i></a></li>
-                                    <li><a href=""><i class="fab fa-facebook"></i></a></li>
-                                    <li><a href=""><i class="fab fa-viber"></i></a></li>                                            
-                                    <li><a href=""><i class="fab fa-telegram"></i></a></li>
-                                    <li><a href=""><i class="fab fa-whatsapp"></i></a></li>
-                                </ul>
-                            </div>
-                            <div class="team-item_btn mt-2">
-                                <div class="team-item_btn-show-more text-center">
-                                    Lorem, ipsum.
-                                </div>
-                                <div class="team-item_btn-help mt-3 text-center">
-                                    Lorem
-                                </div>
-                            </div>
-                        </div>
-                        <div class="team-item col-3 mb-3">
-                            <div class="team-item_video">
-                                <a href="">
-                                    <i class="fas fa-play"></i>
-                                </a>
-                            </div>
-                            <div class="team-item_name mt-2">
-                                Lorem, ipsum.
-                            </div>
-                            <div class="team-item_district">
-                                Lorem, ipsum dolor.
-                            </div>
-                            <div class="team-item_contacts d-flex flex-column mt-3">    
-                                <div><i class="far fa-envelope mr-2"></i><a href="">mail@mail.ru</a></div>
-                                <div><i class="fas fa-phone mr-2 mt-2"></i><a href="">+7 999 999 99 99</a></div>
-                            </div>
-                            <div class="team-item_links d-flex justify-content-center mt-2">
-                                <ul class="row">
-                                    <li><a href=""><i class="fab fa-vk"></i></a></li>
-                                    <li><a href=""><i class="fab fa-twitter"></i></a></li>
-                                    <li><a href=""><i class="fab fa-facebook"></i></a></li>
-                                    <li><a href=""><i class="fab fa-viber"></i></a></li>                                            
-                                    <li><a href=""><i class="fab fa-telegram"></i></a></li>
-                                    <li><a href=""><i class="fab fa-whatsapp"></i></a></li>
-                                </ul>
-                            </div>
-                            <div class="team-item_btn mt-2">
-                                <div class="team-item_btn-show-more text-center">
-                                    Lorem, ipsum.
-                                </div>
-                                <div class="team-item_btn-help mt-3 text-center">
-                                    Lorem
+                                <div class="team-item_btn mt-2">
+                                    <div class="team-item_btn-show-more text-center">
+                                        Lorem, ipsum.
+                                    </div>
+                                    <div class="team-item_btn-help mt-3 text-center">
+                                        Lorem
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="support">
-                <div class="support-wrapper d-flex pt-5 pb-5">
-                    <div class="support-info">
+            <section class="support" id="support">
+                <div class="support-wrapper row pt-5 pb-5">
+                    <div class="support-info col-12 col-md-6">
                         <div class="support-title">
                             <h2 class="display-4">Lorem, ipsum.</h2>
                         </div>
@@ -453,7 +229,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="support-form">
+                    <div class="support-form col-12 col-md-6 mt-3 mt-md-0">
                         <form>
                             <div class="form-group">
                               <label for="exampleInputEmail1">Lorem</label>
@@ -475,40 +251,74 @@
                               <input type="checkbox" class="form-check-input" id="exampleCheck1">
                               <label class="form-check-label" for="exampleCheck1">Lorem</label>
                             </div>
-                            <button type="submit" class="btn btn-success mt-3">Submit</button>
+                            <button type="submit" class="btn mt-3">Submit</button>
                           </form>
+                    </div>
+                </div>
+            </section>
+            <section class="donate" id="donate">
+                <div class="donate-wrapper row">
+                    <div class="donate-info col-md-6 col-12">
+                        <div class="donate-info_title">
+                            <h2 class="display-4">Lorem, ipsum.</h2>
+                        </div>
+                        <div class="donate-info_text">
+                            <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum nesciunt, praesentium similique dolore fugiat amet provident a autem sapiente iusto omnis, quos perspiciatis est blanditiis quaerat. Perferendis totam sequi necessitatibus.</p>
+                        </div>
+                    </div>
+                    <div class="donate-methods col-md-6 col-12 mt-3 mt-md-0">
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item">
+                              <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Lorem</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Lorem</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Lorem</a>
+                            </li>
+                          </ul>
+                          <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active p-2" id="home" role="tabpanel" aria-labelledby="home-tab">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae repellat mollitia dolores iste voluptatem ducimus ut possimus dicta explicabo doloremque!</div>
+                            <div class="tab-pane fade p-2" id="profile" role="tabpanel" aria-labelledby="profile-tab">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi animi explicabo odio nostrum ad pariatur, corrupti veniam, consectetur quae labore, rem delectus voluptas. Quia voluptatibus cumque dolorum, quidem rem suscipit!</div>
+                            <div class="tab-pane fade p-2" id="contact" role="tabpanel" aria-labelledby="contact-tab">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum, itaque dignissimos nesciunt dicta cupiditate facere delectus, labore doloribus excepturi facilis quidem laborum quisquam maiores id!</div>
+                          </div>
                     </div>
                 </div>
             </section>
         </div>
     </main>
     <footer class="footer">
-        <div class="footer-wrapper container pt-3 pb-3 d-flex align-items-center">
-            <div class="footer-info col-5">
-                <div class="footer-title">
-                    <h4 class="display-4">Lorem, ipsum dolor.</h4>
+        <div class="container">
+            <div class="footer-wrapper pt-3 pb-3 row align-items-center">
+                <div class="footer-info col-md-5 col-12">
+                    <div class="footer-title">
+                        <h4 class="display-4">Lorem, ipsum dolor.</h4>
+                    </div>
+                    <div class="footer-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, veritatis!</div>
                 </div>
-                <div class="footer-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, veritatis!</div>
-            </div>
-            <div class="footer-links-wrapper col-4 d-flex flex-column align-items-center">
-                <div class="footer-links_text lead">
-                    Lorem, ipsum dolor.
-                </div>
-                <div class="footer-links mt-2">
-                    <ul class="row align-items-center">
-                        <li><a href=""><i class="fab fa-vk"></i></a></li>
-                        <li><a href=""><i class="fab fa-twitter"></i></a></li>
-                        <li><a href=""><i class="fab fa-facebook"></i></a></li>
-                        <li><a href=""><i class="fab fa-viber"></i></a></li>                                            
-                        <li><a href=""><i class="fab fa-telegram"></i></a></li>
-                        <li><a href=""><i class="fab fa-whatsapp"></i></a></li>
-                    </ul>
+                <div class="footer-links-wrapper col-md-4 col-12 d-flex flex-column align-items-center mt-3 mt-mb-0">
+                    <div class="footer-links_text lead">
+                        Lorem, ipsum dolor.
+                    </div>
+                    <div class="footer-links mt-2">
+                        <ul class="row align-items-center">
+                            <li><a href=""><i class="fab fa-vk"></i></a></li>
+                            <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                            <li><a href=""><i class="fab fa-facebook"></i></a></li>
+                            <li><a href=""><i class="fab fa-viber"></i></a></li>                                            
+                            <li><a href=""><i class="fab fa-telegram"></i></a></li>
+                            <li><a href=""><i class="fab fa-whatsapp"></i></a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </footer>
     </div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
 </body>
 

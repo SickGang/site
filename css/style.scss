@@ -2,9 +2,16 @@ body {
     font-family: "Source Sans Pro", sans-serif;
     font-size: 18px;
 }
-
+a {
+    color: black;
+}
 a:hover {
     text-decoration: none;
+}
+
+input,
+button {
+    border-radius: 0 !important;
 }
 
 .header {
@@ -41,24 +48,34 @@ a:hover {
     }
     &-img {
         img {
-            width: 200px;
+            max-width: 200px;
             height: 100px;
         }
     }
     &-share {
+        position: relative;
+        &-btn {
+            position: relative;
+            text-align: center;
+            width: 100px;
+            cursor: pointer;
+            padding: 10px;
+            border: 1px solid black;
+            &:hover {
+                background-color: black;
+                color: white;
+                transition: background 0.3s ease-in-out;
+            }
+        }
         a {
             margin-right: 10px;
             font-size: 20px;
-            i {
-                // color: black;
-            }
         }
     }
 }
 
 .hero {
     display: flex;
-    // padding: 60px 0px;
     border-bottom: 2px solid #d9e7eb;
     &-button {
         cursor: pointer;
@@ -75,19 +92,13 @@ a:hover {
             background-color: #fff;
         }
     }
-    &-description {
-        &-wrapper {
-            flex-basis: 50%;
-        }
-    }
     &-video {
         position: relative;
         cursor: pointer;
-        height: 100%;
+        height: 300px;
         background-color: black;
         &-wrapper {
             padding-left: 30px;
-            flex-basis: 50%;
         }
         a {
             position: absolute;
@@ -110,7 +121,6 @@ a:hover {
 .company {
     &-accordion {
         ul {
-            // column-count: 2;
             li {
                 border-top: 2px solid #d9e7eb;
                 padding: 15px 0px;
@@ -144,12 +154,11 @@ li.active {
 .team {
     border-top: 2px solid #d9e7eb;
     &-item {
-        display: flex;
-        flex-direction: column;
         align-items: center;
         &_video {
-            width: 100%;
-            height: 200px;
+            margin-right: 50px;
+            width: 400px;
+            height: 270px;
             background-color: black;
             position: relative;
             cursor: pointer;
@@ -197,24 +206,57 @@ li.active {
 
 .support {
     border-top: 2px solid #d9e7eb;
-    &-info {
-        flex-basis: 50%;
-    }
     &-form {
-        flex-basis: 50%;
+        button {
+            width: 100px;
+            cursor: pointer;
+            padding: 10px;
+            border: 1px solid black;
+            &:hover {
+                background-color: black;
+                color: white;
+                transition: background 0.3s ease-in-out;
+            }
+        }
     }
 }
 
+.donate {
+    border-top: 2px solid #d9e7eb;
+    padding: 50px 0px;
+}
 .footer {
     &-wrapper {
         border-top: 2px solid #d9e7eb;
+        ul {
+            li {
+                margin-right: 5px;
+            }
+        }
     }
 }
-
-.col-6 div {
-    display: none;
+.dropdown-menu.show {
+    display: flex !important;
+    flex-direction: column;
+    min-width: 190px;
+    align-items: center;
 }
-
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+    background-color: black;
+    color: white;
+}
+.nav-link:hover {
+    background-color: black;
+    color: white;
+    transition: background 0.3s ease-in-out;
+}
+.dropdown-toggle {
+    cursor: pointer;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 0 !important;
+}
 .fa-vk {
     color: #366aa6;
 }
@@ -232,4 +274,10 @@ li.active {
 }
 .fa-viber {
     color: #7d3daf;
+}
+
+@media (max-width: 767px) {
+    .team-item {
+        justify-content: center;
+    }
 }
