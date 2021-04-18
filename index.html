@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,10 +10,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/YouTubePopUp.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/c895ad771d.js" crossorigin="anonymous"></script>
-    <title>Navalny</title>
+    <title>Команда независимых кандитатов в Тамбовскую городскую думу</title>
 </head>
 
 <body>
@@ -21,45 +24,44 @@
             <div class="row align-items-center justify-content-between">
                 <nav class="col-lg-5 col-sm-2 col-3">
                     <ul class="header-nav row d-none d-lg-flex">
-                        <li><a href="#hero">Lorem</a></li>
-                        <li><a href="#company">Lorem</a></li>
-                        <li><a href="#team">Lorem</a></li>
-                        <li><a href="#support">Lorem</a></li>
-                        <li><a href="#donate">Lorem</a></li>
+                        <li><a href="#company">Программа</a></li>
+                        <li><a href="#team">Кандитаты</a></li>
+                        <li><a href="#support">Поддержать</a></li>
+                        <li><a href="#contacts">Контакты</a></li>
+                        <!-- <li><a href="#donate">Lorem</a></li> -->
                     </ul>
                     <div class="dropdown show d-block d-lg-none">
-                        <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          Menu
+                        <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Меню
                         </a>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                          <a class="dropdown-item" href="#hero">Lorem</a>
-                          <a class="dropdown-item" href="#company">Lorem</a>
-                          <a class="dropdown-item" href="#team">Lorem</a>
-                          <a class="dropdown-item" href="#support">Lorem</a>
-                          <a class="dropdown-item" href="#donate">Lorem</a>
+                            <a class="dropdown-item" href="#company">Программа</a>
+                            <a class="dropdown-item" href="#team">Кандитаты</a>
+                            <a class="dropdown-item" href="#support">Поддержать</a>
+                            <a class="dropdown-item" href="#contacts">Контакты</a>
                         </div>
-                      </div>
+                    </div>
                 </nav>
                 <div class="header-img col-sm-3 col-7">
-                    <a href="#start"><img src="img/default.jpg" alt=""></a>
+                    <a href="#start"><img src="img/logo.svg" alt=""></a>
                 </div>
                 <div class="header-share col-lg-2 col-sm-2 col-3 d-sm-flex d-none justify-content-end">
-                    <div class="header-share-btn" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Lorem
+                    <div class="header-share-btn" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        <a class="button-share mr-0">Поделиться</a>
                     </div>
                     <div class="header-share_links dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        Lorem, ipsum dolor
                         <ul class="row mt-2">
-                            <li><a href=""><i class="fab fa-vk"></i></a></li>
-                            <li><a href=""><i class="fab fa-twitter"></i></a></li>
-                            <li><a href=""><i class="fab fa-facebook"></i></a></li>
-                            <li><a href=""><i class="fab fa-viber"></i></a></li>                                            
-                            <li><a href=""><i class="fab fa-telegram"></i></a></li>
-                            <li><a href=""><i class="fab fa-whatsapp"></i></a></li>
+                            <li><a href="header-share_link"><i class="fab fa-vk"></i></a></li>
+                            <li><a href="header-share_link"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="header-share_link"><i class="fab fa-facebook"></i></a></li>
+                            <li><a href="header-share_link"><i class="fab fa-viber"></i></a></li>
+                            <li><a href="header-share_link"><i class="fab fa-telegram"></i></a></li>
+                            <li><a href="header-share_link"><i class="fab fa-whatsapp"></i></a></li>
                         </ul>
                     </div>
                 </div>
-                
             </div>
         </div>
     </header>
@@ -68,100 +70,150 @@
             <section class="hero pt-5 pb-5 row" id="hero">
                 <div class="hero-description-wrapper col-12 col-md-6">
                     <div class="hero-description">
-                        <h2 class="display-4">Lorem ipsum dolor sit amet!</h2>
-                        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, cumque soluta? Fuga, dolorum voluptatem. Blanditiis eveniet temporibus nisi numquam sint!</p>
+                        <h2 class="display-4 text-uppercase font-weight-bold text-center">Против коррупции и «Единой
+                            России»</h2>
+                        <p class="lead">В сентябре пройдут выборы в Тамбовскую городскую думу. Сейчас 29 мест из 36 в
+                            ней занимают единороссы. Вместо того чтобы вкладывать бюджетные деньги в больницы, в
+                            инфраструктуру, поддержку многодетных семей и пенсионеров, они растрачивают их впустую. Мы
+                            идем на выборы, чтобы это изменить.</p>
                     </div>
                     <div class="hero-button text-center">
-                        Lorem, ipsum.
+                        <a href="#support">Поставить подпись</a>
                     </div>
                 </div>
                 <div class="hero-video-wrapper col-12 col-md-6 mt-3 mt-md-0 p-0">
-                    <div class="hero-video">
-                        <a href="">
-                            <i class="fas fa-play"></i>
-                        </a>
-                    </div>
+                    <a class="hero-video_link" href="https://www.youtube.com/watch?v=yGVWJCChrLY">
+                        <div class="hero-video">
+                            <div class="hero-video-play">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                    </a>
                 </div>
             </section>
             <section class="company" id="company">
                 <div class="company-wrapper pt-4">
                     <div class="company-title text-center">
-                        <h1 class="display-4">Lorem ipsum dolor</h1>
+                        <h1 class="display-4 text-uppercase font-weight-bold">Предвыборная компания</h1>
                     </div>
                     <div class="company-text mt-3">
-                        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis dolor nesciunt, aliquam voluptatibus illum cupiditate? Quidem repellat tenetur nostrum obcaecati quaerat fugit voluptate reiciendis, molestias, incidunt veniam ratione, assumenda exercitationem!</p>
+                        <p class="lead">В своей программе мы обозначили решения самых важных городских проблем. Что
+                            делать с общественным транспортом? Как город должен распоряжаться землей и имуществом? Как
+                            должна работать гордума? И как поддержать тамбовчан во время кризиса?</p>
                     </div>
                     <div class="company-accordion mt-4">
                         <ul class="d-flex flex-column justify-content-between">
                             <li>
-                                <a href="#!">Lorem ipsum dolor sit</a><i class="fas fa-chevron-down"></i>
+                                <a href="#!">Город для жителей, а не для чиновников</a><i
+                                    class="fas fa-chevron-down"></i>
                                 <div class="company-accordion_item-text">
                                     <p class="lead">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure aperiam aliquam sint vitae, sequi doloremque consequatur. Laborum explicabo doloremque incidunt. Debitis, velit ut. Dolorum dolor saepe officia. Iusto, officiis, illo sapiente repellendus a assumenda nemo libero, dolorem deserunt mollitia voluptates reprehenderit numquam voluptas minus? Quae dicta eaque aspernatur fugiat laboriosam voluptates esse minima quos voluptatum, harum incidunt nostrum earum enim hic. Rem, esse alias. Quod voluptates excepturi quos pariatur ducimus fugit aliquam quam iure, eligendi error. Iusto, fugiat consequuntur beatae aliquam eaque voluptatem animi, doloribus illo earum in provident at libero nihil quis laboriosam dolor officiis expedita possimus unde veritatis!
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, vel?
+                                        Мы постоянно видим, как городские земли раздаются направо и налево. Например,
+                                        несколько раз местная епархия через обман жителей пыталась обнести Набережную и
+                                        сквер Зои Космодемьянской высоким забором. Жителям удалось отстоять эти
+                                        территории, но только после общественной огласки. Неудивительно, что единороссы
+                                        в думе в очередной раз встали на сторону епархии, а не на сторону тамбовчан.
+                                    </p>
+                                    <p class="lead mt-3">
+                                        В гордуме мы будем добиваться, чтобы публичных слушаний стало больше, и будем
+                                        следить за тем, чтобы они не проходили тайно. Мы считаем, что последнее слово по
+                                        вопросам застройки зеленых и исторических зон должно быть за горожанами, а не за
+                                        чиновниками. А самые острые вопросы, связанные с использованием городских
+                                        территорий и их застройкой, должны решаться на городском референдуме.
                                     </p>
                                 </div>
                             </li>
                             <li>
-                                <a href="#!">Lorem ipsum dolor sit</a><i class="fas fa-chevron-down"></i>
+                                <a href="#!">Деньги из бюджета — для города и горожан, а не для сомнительных
+                                    фондов</a><i class="fas fa-chevron-down"></i>
                                 <div class="company-accordion_item-text">
                                     <p class="lead">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure aperiam aliquam sint vitae, sequi doloremque consequatur. Laborum explicabo doloremque incidunt. Debitis, velit ut. Dolorum dolor saepe officia. Iusto, officiis, illo sapiente repellendus a assumenda nemo libero, dolorem deserunt mollitia voluptates reprehenderit numquam voluptas minus? Quae dicta eaque aspernatur fugiat laboriosam voluptates esse minima quos voluptatum, harum incidunt nostrum earum enim hic. Rem, esse alias. Quod voluptates excepturi quos pariatur ducimus fugit aliquam quam iure, eligendi error. Iusto, fugiat consequuntur beatae aliquam eaque voluptatem animi, doloribus illo earum in provident at libero nihil quis laboriosam dolor officiis expedita possimus unde veritatis!
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, vel?
+                                        Вместо развития общественного транспорта, доступной среды и помощи сиротам и
+                                        пенсионерам городской бюджет сейчас разбазаривается на сомнительные
+                                        патриотические фонды и организации. В 2018 году мы рассказали про организацию
+                                        «Патриот», у которой нет даже юридического адреса. Она получила из городского
+                                        бюджета 200 тысяч рублей. Это произошло потому, что ее председатель сотрудничает
+                                        с областными чиновниками из «Единой России». Подобные организации не приносят
+                                        абсолютно никакой пользы, но единороссы в думе почему-то решили помочь именно
+                                        им, а не тамбовским школьникам или пенсионерам. В городской думе мы будем
+                                        выступать за то, чтобы деньги из бюджета тратились разумно и в интересах
+                                        тамбовчан.
                                     </p>
                                 </div>
                             </li>
                             <li>
-                                <a href="#!">Lorem ipsum dolor sit</a><i class="fas fa-chevron-down"></i>
+                                <a href="#!">Больше контроля в сфере ЖКХ</a><i class="fas fa-chevron-down"></i>
                                 <div class="company-accordion_item-text">
                                     <p class="lead">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure aperiam aliquam sint vitae, sequi doloremque consequatur. Laborum explicabo doloremque incidunt. Debitis, velit ut. Dolorum dolor saepe officia. Iusto, officiis, illo sapiente repellendus a assumenda nemo libero, dolorem deserunt mollitia voluptates reprehenderit numquam voluptas minus? Quae dicta eaque aspernatur fugiat laboriosam voluptates esse minima quos voluptatum, harum incidunt nostrum earum enim hic. Rem, esse alias. Quod voluptates excepturi quos pariatur ducimus fugit aliquam quam iure, eligendi error. Iusto, fugiat consequuntur beatae aliquam eaque voluptatem animi, doloribus illo earum in provident at libero nihil quis laboriosam dolor officiis expedita possimus unde veritatis!
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, vel?
+                                        Каждый из нас ежемесячно платит внушительные суммы за услуги ЖКХ. Тамбовчане
+                                        отдают как минимум треть своей зарплаты на коммунальные платежи. При этом сами
+                                        услуги оказываются некачественно, и люди часто остаются без воды и тепла. А
+                                        обоснование тарифов выглядит как китайская грамота. Мы считаем, что в городской
+                                        думе должно быть больше контроля за сферой ЖКХ. Мы будем добиваться от
+                                        управляющих компаний начисления всех платежей по понятным и прозрачным тарифам —
+                                        чтобы каждый житель города понимал, за что он платит. А если какая-то УК
+                                        выполняет свою работу некачественно, ей не место на рынке.
                                     </p>
                                 </div>
                             </li>
                             <li>
-                                <a href="#!">Lorem ipsum dolor sit</a><i class="fas fa-chevron-down"></i>
+                                <a href="#!">Парковки — автомобилям, троллейбусы — горожанам</a><i
+                                    class="fas fa-chevron-down"></i>
                                 <div class="company-accordion_item-text">
                                     <p class="lead">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure aperiam aliquam sint vitae, sequi doloremque consequatur. Laborum explicabo doloremque incidunt. Debitis, velit ut. Dolorum dolor saepe officia. Iusto, officiis, illo sapiente repellendus a assumenda nemo libero, dolorem deserunt mollitia voluptates reprehenderit numquam voluptas minus? Quae dicta eaque aspernatur fugiat laboriosam voluptates esse minima quos voluptatum, harum incidunt nostrum earum enim hic. Rem, esse alias. Quod voluptates excepturi quos pariatur ducimus fugit aliquam quam iure, eligendi error. Iusto, fugiat consequuntur beatae aliquam eaque voluptatem animi, doloribus illo earum in provident at libero nihil quis laboriosam dolor officiis expedita possimus unde veritatis!
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, vel?
+                                        С каждым годом в Тамбове все труднее найти парковку как на центральных улицах,
+                                        так и во дворах. Городское пространство — ограниченный ресурс, и поэтому
+                                        невозможно дать отдельную парковку каждому. Нужно менять нормативы строительства
+                                        новых домов: парковочных мест у них должно быть гораздо больше. Необходимо
+                                        оптимизировать и городское уличное пространство.
+                                    </p>
+                                    <p class="lead mt-3">
+                                        Но одних парковок недостаточно — нужно решить еще и проблему пробок, а для этого
+                                        надо развивать общественный транспорт. Сейчас у нас есть только старые автобусы,
+                                        которые разваливаются буквально на ходу. Маршруты не продуманы — многим
+                                        приходится ездить с пересадками или толпиться в переполненном автобусе. Вечером
+                                        уехать из одной части города в другую просто невозможно. Все это заставляет
+                                        людей чаще использовать такси и личные автомобили — отсюда и пробки. В гордуме
+                                        мы будем добиваться увеличения количества маршрутов и улучшения качества
+                                        городского транспорта.
+                                    </p>
+                                    <p class="lead mt-3">
+                                        А еще мы будем выступать за сохранение троллейбуса. Потому что он недорогой и не
+                                        вредит экологии.
                                     </p>
                                 </div>
                             </li>
                             <li>
-                                <a href="#!">Lorem ipsum dolor sit</a><i class="fas fa-chevron-down"></i>
+                                <a href="#!">За помощь жителям и бизнесу во время кризиса</a><i
+                                    class="fas fa-chevron-down"></i>
                                 <div class="company-accordion_item-text">
                                     <p class="lead">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure aperiam aliquam sint vitae, sequi doloremque consequatur. Laborum explicabo doloremque incidunt. Debitis, velit ut. Dolorum dolor saepe officia. Iusto, officiis, illo sapiente repellendus a assumenda nemo libero, dolorem deserunt mollitia voluptates reprehenderit numquam voluptas minus? Quae dicta eaque aspernatur fugiat laboriosam voluptates esse minima quos voluptatum, harum incidunt nostrum earum enim hic. Rem, esse alias. Quod voluptates excepturi quos pariatur ducimus fugit aliquam quam iure, eligendi error. Iusto, fugiat consequuntur beatae aliquam eaque voluptatem animi, doloribus illo earum in provident at libero nihil quis laboriosam dolor officiis expedita possimus unde veritatis!
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, vel?
+                                        Из-за эпидемии коронавируса экономика получила мощный удар, многие
+                                        предприниматели разорились, люди потеряли работу. Как депутаты мы будем делать
+                                        все возможное для увеличения количества рабочих мест, в том числе в МУПах, а для
+                                        предпринимателей будем предлагать снижение местных налогов в два раза на период
+                                        до трех лет.
                                     </p>
                                 </div>
                             </li>
                             <li>
-                                <a href="#!">Lorem ipsum dolor sit</a><i class="fas fa-chevron-down"></i>
+                                <a href="#!">За прямые выборы мэра</a><i class="fas fa-chevron-down"></i>
                                 <div class="company-accordion_item-text">
                                     <p class="lead">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure aperiam aliquam sint vitae, sequi doloremque consequatur. Laborum explicabo doloremque incidunt. Debitis, velit ut. Dolorum dolor saepe officia. Iusto, officiis, illo sapiente repellendus a assumenda nemo libero, dolorem deserunt mollitia voluptates reprehenderit numquam voluptas minus? Quae dicta eaque aspernatur fugiat laboriosam voluptates esse minima quos voluptatum, harum incidunt nostrum earum enim hic. Rem, esse alias. Quod voluptates excepturi quos pariatur ducimus fugit aliquam quam iure, eligendi error. Iusto, fugiat consequuntur beatae aliquam eaque voluptatem animi, doloribus illo earum in provident at libero nihil quis laboriosam dolor officiis expedita possimus unde veritatis!
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, vel?
+                                        В городской думе мы предложим вернуть прямые выборы мэра. Мы считаем, что такая
+                                        ответственная и важная должность не должна быть назначаемой. Жители Тамбова
+                                        должны сами выбирать мэра, а избранный мэр — нести перед ними ответственность.
                                     </p>
                                 </div>
                             </li>
                             <li>
-                                <a href="#!">Lorem ipsum dolor sit</a><i class="fas fa-chevron-down"></i>
+                                <a href="#!">Тамбовчане должны знать, как голосуют депутаты</a><i
+                                    class="fas fa-chevron-down"></i>
                                 <div class="company-accordion_item-text">
                                     <p class="lead">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure aperiam aliquam sint vitae, sequi doloremque consequatur. Laborum explicabo doloremque incidunt. Debitis, velit ut. Dolorum dolor saepe officia. Iusto, officiis, illo sapiente repellendus a assumenda nemo libero, dolorem deserunt mollitia voluptates reprehenderit numquam voluptas minus? Quae dicta eaque aspernatur fugiat laboriosam voluptates esse minima quos voluptatum, harum incidunt nostrum earum enim hic. Rem, esse alias. Quod voluptates excepturi quos pariatur ducimus fugit aliquam quam iure, eligendi error. Iusto, fugiat consequuntur beatae aliquam eaque voluptatem animi, doloribus illo earum in provident at libero nihil quis laboriosam dolor officiis expedita possimus unde veritatis!
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, vel?
-                                    </p>
-                                </div>
-                            </li>
-                            <li>
-                                <a href="#!">Lorem ipsum dolor sit</a><i class="fas fa-chevron-down"></i>
-                                <div class="company-accordion_item-text">
-                                    <p class="lead">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure aperiam aliquam sint vitae, sequi doloremque consequatur. Laborum explicabo doloremque incidunt. Debitis, velit ut. Dolorum dolor saepe officia. Iusto, officiis, illo sapiente repellendus a assumenda nemo libero, dolorem deserunt mollitia voluptates reprehenderit numquam voluptas minus? Quae dicta eaque aspernatur fugiat laboriosam voluptates esse minima quos voluptatum, harum incidunt nostrum earum enim hic. Rem, esse alias. Quod voluptates excepturi quos pariatur ducimus fugit aliquam quam iure, eligendi error. Iusto, fugiat consequuntur beatae aliquam eaque voluptatem animi, doloribus illo earum in provident at libero nihil quis laboriosam dolor officiis expedita possimus unde veritatis!
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, vel?
+                                        Мы считаем, что все действия депутатов должны быть открытыми и публичными. Мы
+                                        выступим с инициативой вести прямые трансляции или делать видеозаписи заседаний
+                                        думы. Жители города должны видеть, как голосуют депутаты, которых они избрали.
                                     </p>
                                 </div>
                             </li>
@@ -172,228 +224,53 @@
             <section class="team pb-4" id="team">
                 <div class="team-wrapper">
                     <div class="team-title text-center pt-4 pb-4">
-                        <h1 class="display-4">Lorem, ipsum dolor.</h1>
+                        <h1 class="display-4 text-uppercase font-weight-bold">Команда независимых кандитатов</h1>
                     </div>
                     <div class="team-items d-flex flex-column">
                         <div class="team-item mb-3 row">
-                            <div class="team-item_video mr-md-5 mr-0">
-                                <a href="">
-                                    <i class="fas fa-play"></i>
-                                </a>
-                            </div>
+                            <a class="hero-video_link" href="https://www.youtube.com/watch?v=Is1bfylXVHI">
+                                <div class="team-item_video mr-md-5 mr-0">
+                                        <div class="hero-video video-anna">
+                                            <div class="hero-video-play">
+                                                <i class="fas fa-play"></i>
+                                            </div>
+                                        </div>
+                                </div>
+                            </a>
                             <div class="team-item_info">
-                                <div class="team-item_name mt-2">
-                                    Lorem, ipsum.
+                                <div class="team-item_name mt-2 text-uppercase font-weight-bold">
+                                    Анна Нефёдова
                                 </div>
-                                <div class="team-item_district">
-                                    Lorem, ipsum dolor.
+                                <div class="team-item_district mt-2">
+                                    Избирательный округ №12
                                 </div>
-                                <div class="team-item_contacts d-flex flex-column mt-3">    
-                                    <div><i class="far fa-envelope mr-2"></i><a href="">mail@mail.ru</a></div>
-                                    <div><i class="fas fa-phone mr-2 mt-2"></i><a href="">+7 999 999 99 99</a></div>
+                                <div class="team-item_contacts d-flex flex-column mt-3">
+                                    <div><i class="far fa-envelope mr-2"></i><a
+                                            href="mailto:nefedova@navalny-team.org">nefedova@navalny-team.org</a></div>
+                                    <div><i class="fas fa-phone mr-2 mt-2"></i><a href="tel:+7 960 670 15 60">+7 960 670
+                                            15 60</a></div>
                                 </div>
                                 <div class="team-item_links d-flex justify-content-center mt-2">
                                     <ul class="row">
                                         <li><a href=""><i class="fab fa-vk"></i></a></li>
                                         <li><a href=""><i class="fab fa-twitter"></i></a></li>
                                         <li><a href=""><i class="fab fa-facebook"></i></a></li>
-                                        <li><a href=""><i class="fab fa-viber"></i></a></li>                                            
+                                        <li><a href=""><i class="fab fa-viber"></i></a></li>
                                         <li><a href=""><i class="fab fa-telegram"></i></a></li>
                                         <li><a href=""><i class="fab fa-whatsapp"></i></a></li>
                                     </ul>
                                 </div>
                                 <div class="team-item_btn mt-2">
-                                    <div class="team-item_btn-show-more text-center">
-                                        Lorem, ipsum.
-                                    </div>
-                                    <div class="team-item_btn-help mt-3 text-center">
-                                        Lorem
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="team-item mb-3 row">
-                            <div class="team-item_video mr-md-5 mr-0">
-                                <a href="">
-                                    <i class="fas fa-play"></i>
-                                </a>
-                            </div>
-                            <div class="team-item_info">
-                                <div class="team-item_name mt-2">
-                                    Lorem, ipsum.
-                                </div>
-                                <div class="team-item_district">
-                                    Lorem, ipsum dolor.
-                                </div>
-                                <div class="team-item_contacts d-flex flex-column mt-3">    
-                                    <div><i class="far fa-envelope mr-2"></i><a href="">mail@mail.ru</a></div>
-                                    <div><i class="fas fa-phone mr-2 mt-2"></i><a href="">+7 999 999 99 99</a></div>
-                                </div>
-                                <div class="team-item_links d-flex justify-content-center mt-2">
-                                    <ul class="row">
-                                        <li><a href=""><i class="fab fa-vk"></i></a></li>
-                                        <li><a href=""><i class="fab fa-twitter"></i></a></li>
-                                        <li><a href=""><i class="fab fa-facebook"></i></a></li>
-                                        <li><a href=""><i class="fab fa-viber"></i></a></li>                                            
-                                        <li><a href=""><i class="fab fa-telegram"></i></a></li>
-                                        <li><a href=""><i class="fab fa-whatsapp"></i></a></li>
-                                    </ul>
-                                </div>
-                                <div class="team-item_btn mt-2">
-                                    <div class="team-item_btn-show-more text-center">
-                                        Lorem, ipsum.
-                                    </div>
-                                    <div class="team-item_btn-help mt-3 text-center">
-                                        Lorem
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="team-item mb-3 row">
-                            <div class="team-item_video mr-md-5 mr-0">
-                                <a href="">
-                                    <i class="fas fa-play"></i>
-                                </a>
-                            </div>
-                            <div class="team-item_info">
-                                <div class="team-item_name mt-2">
-                                    Lorem, ipsum.
-                                </div>
-                                <div class="team-item_district">
-                                    Lorem, ipsum dolor.
-                                </div>
-                                <div class="team-item_contacts d-flex flex-column mt-3">    
-                                    <div><i class="far fa-envelope mr-2"></i><a href="">mail@mail.ru</a></div>
-                                    <div><i class="fas fa-phone mr-2 mt-2"></i><a href="">+7 999 999 99 99</a></div>
-                                </div>
-                                <div class="team-item_links d-flex justify-content-center mt-2">
-                                    <ul class="row">
-                                        <li><a href=""><i class="fab fa-vk"></i></a></li>
-                                        <li><a href=""><i class="fab fa-twitter"></i></a></li>
-                                        <li><a href=""><i class="fab fa-facebook"></i></a></li>
-                                        <li><a href=""><i class="fab fa-viber"></i></a></li>                                            
-                                        <li><a href=""><i class="fab fa-telegram"></i></a></li>
-                                        <li><a href=""><i class="fab fa-whatsapp"></i></a></li>
-                                    </ul>
-                                </div>
-                                <div class="team-item_btn mt-2">
-                                    <div class="team-item_btn-show-more text-center">
-                                        Lorem, ipsum.
-                                    </div>
-                                    <div class="team-item_btn-help mt-3 text-center">
-                                        Lorem
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="team-item mb-3 row">
-                            <div class="team-item_video mr-md-5 mr-0">
-                                <a href="">
-                                    <i class="fas fa-play"></i>
-                                </a>
-                            </div>
-                            <div class="team-item_info">
-                                <div class="team-item_name mt-2">
-                                    Lorem, ipsum.
-                                </div>
-                                <div class="team-item_district">
-                                    Lorem, ipsum dolor.
-                                </div>
-                                <div class="team-item_contacts d-flex flex-column mt-3">    
-                                    <div><i class="far fa-envelope mr-2"></i><a href="">mail@mail.ru</a></div>
-                                    <div><i class="fas fa-phone mr-2 mt-2"></i><a href="">+7 999 999 99 99</a></div>
-                                </div>
-                                <div class="team-item_links d-flex justify-content-center mt-2">
-                                    <ul class="row">
-                                        <li><a href=""><i class="fab fa-vk"></i></a></li>
-                                        <li><a href=""><i class="fab fa-twitter"></i></a></li>
-                                        <li><a href=""><i class="fab fa-facebook"></i></a></li>
-                                        <li><a href=""><i class="fab fa-viber"></i></a></li>                                            
-                                        <li><a href=""><i class="fab fa-telegram"></i></a></li>
-                                        <li><a href=""><i class="fab fa-whatsapp"></i></a></li>
-                                    </ul>
-                                </div>
-                                <div class="team-item_btn mt-2">
-                                    <div class="team-item_btn-show-more text-center">
-                                        Lorem, ipsum.
-                                    </div>
-                                    <div class="team-item_btn-help mt-3 text-center">
-                                        Lorem
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="team-item mb-3 row">
-                            <div class="team-item_video mr-md-5 mr-0">
-                                <a href="">
-                                    <i class="fas fa-play"></i>
-                                </a>
-                            </div>
-                            <div class="team-item_info">
-                                <div class="team-item_name mt-2">
-                                    Lorem, ipsum.
-                                </div>
-                                <div class="team-item_district">
-                                    Lorem, ipsum dolor.
-                                </div>
-                                <div class="team-item_contacts d-flex flex-column mt-3">    
-                                    <div><i class="far fa-envelope mr-2"></i><a href="">mail@mail.ru</a></div>
-                                    <div><i class="fas fa-phone mr-2 mt-2"></i><a href="">+7 999 999 99 99</a></div>
-                                </div>
-                                <div class="team-item_links d-flex justify-content-center mt-2">
-                                    <ul class="row">
-                                        <li><a href=""><i class="fab fa-vk"></i></a></li>
-                                        <li><a href=""><i class="fab fa-twitter"></i></a></li>
-                                        <li><a href=""><i class="fab fa-facebook"></i></a></li>
-                                        <li><a href=""><i class="fab fa-viber"></i></a></li>                                            
-                                        <li><a href=""><i class="fab fa-telegram"></i></a></li>
-                                        <li><a href=""><i class="fab fa-whatsapp"></i></a></li>
-                                    </ul>
-                                </div>
-                                <div class="team-item_btn mt-2">
-                                    <div class="team-item_btn-show-more text-center">
-                                        Lorem, ipsum.
-                                    </div>
-                                    <div class="team-item_btn-help mt-3 text-center">
-                                        Lorem
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="team-item mb-3 row">
-                            <div class="team-item_video mr-md-5 mr-0">
-                                <a href="">
-                                    <i class="fas fa-play"></i>
-                                </a>
-                            </div>
-                            <div class="team-item_info">
-                                <div class="team-item_name mt-2">
-                                    Lorem, ipsum.
-                                </div>
-                                <div class="team-item_district">
-                                    Lorem, ipsum dolor.
-                                </div>
-                                <div class="team-item_contacts d-flex flex-column mt-3">    
-                                    <div><i class="far fa-envelope mr-2"></i><a href="">mail@mail.ru</a></div>
-                                    <div><i class="fas fa-phone mr-2 mt-2"></i><a href="">+7 999 999 99 99</a></div>
-                                </div>
-                                <div class="team-item_links d-flex justify-content-center mt-2">
-                                    <ul class="row">
-                                        <li><a href=""><i class="fab fa-vk"></i></a></li>
-                                        <li><a href=""><i class="fab fa-twitter"></i></a></li>
-                                        <li><a href=""><i class="fab fa-facebook"></i></a></li>
-                                        <li><a href=""><i class="fab fa-viber"></i></a></li>                                            
-                                        <li><a href=""><i class="fab fa-telegram"></i></a></li>
-                                        <li><a href=""><i class="fab fa-whatsapp"></i></a></li>
-                                    </ul>
-                                </div>
-                                <div class="team-item_btn mt-2">
-                                    <div class="team-item_btn-show-more text-center">
-                                        Lorem, ipsum.
-                                    </div>
-                                    <div class="team-item_btn-help mt-3 text-center">
-                                        Lorem
-                                    </div>
+                                    <a href="#anna" rel="modal:open">
+                                        <div class="team-item_btn-show-more text-center">
+                                            Узнать больше
+                                        </div>
+                                    </a>
+                                    <a href="#support-anna" rel="modal:open">
+                                        <div class="team-item_btn-help mt-3 text-center">
+                                            Поддержать
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -404,104 +281,391 @@
                 <div class="support-wrapper row pt-5 pb-5">
                     <div class="support-info col-12 col-md-6">
                         <div class="support-title">
-                            <h2 class="display-4">Lorem, ipsum.</h2>
+                            <h2 class="display-4 text-uppercase font-weight-bold">Поддержите нас</h2>
                         </div>
                         <div class="support-description">
                             <p class="lead">
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam facere et soluta facilis error ratione distinctio ea asperiores doloremque labore.
+                                Чтобы получить допуск на выборы и победить на них, нам нужно собрать подписи, оформить
+                                документы и провести кампанию. И тут мы не справимся без вашей поддержки. Если вы хотите
+                                поставить подпись за кандидата или присоединиться к кампании как волонтер, оставьте свои
+                                контакты, и мы свяжемся с вами, когда понадобится ваша помощь.
                             </p>
                         </div>
                     </div>
                     <div class="support-form col-12 col-md-6 mt-3 mt-md-0">
                         <form>
                             <div class="form-group">
-                              <label for="exampleInputEmail1">Lorem</label>
-                              <input type="email" class="form-control mt-2" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Lorem lorem">
+                                <label for="exampleInputEmail1">ИМЯ</label>
+                                <input type="text" class="form-control mt-2" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="">
                             </div>
                             <div class="form-group">
-                              <label for="exampleInputPassword1">Lorem</label>
-                              <input type="password" class="form-control mt-2" id="exampleInputPassword1" placeholder="Lorem lorem">
+                                <label for="exampleInputPassword1">ФАМИЛИЯ</label>
+                                <input type="text" class="form-control mt-2" id="exampleInputPassword1" placeholder="">
                             </div>
                             <div class="form-group">
-                                <label for="exampleInputPassword1">Lorem</label>
-                                <input type="password" class="form-control mt-2" id="exampleInputPassword1" placeholder="Lorem lorem">
-                              </div>
-                              <div class="form-group">
-                                <label for="exampleInputPassword1">Lorem</label>
-                                <input type="password" class="form-control mt-2" id="exampleInputPassword1" placeholder="Lorem lorem">
-                              </div>
+                                <label for="exampleInputPassword1">ТЕЛЕФОН</label>
+                                <input type="phone" class="form-control mt-2" id="exampleInputPassword1"
+                                    placeholder="+7">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">E-MAIL</label>
+                                <input type="email" class="form-control mt-2" id="exampleInputPassword1" placeholder="">
+                            </div>
                             <div class="form-check">
-                              <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                              <label class="form-check-label" for="exampleCheck1">Lorem</label>
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Хочу оставить подпись</label>
                             </div>
-                            <button type="submit" class="btn mt-3">Submit</button>
-                          </form>
+                            <div class="form-check mt-3">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Хочу стать волонтёром</label>
+                            </div>
+                            <div class="form-check mt-3">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Я даю согласие на обработку моих
+                                    персональных данных в объеме и на условиях, определенных <a class="offert-link"
+                                        href="">офертой</a></label>
+                            </div>
+                            <button type="submit" class="btn mt-3">Отправить контакты</button>
+                        </form>
                     </div>
                 </div>
             </section>
-            <section class="donate" id="donate">
+            <!-- <section class="donate" id="donate">
                 <div class="donate-wrapper row">
                     <div class="donate-info col-md-6 col-12">
                         <div class="donate-info_title">
                             <h2 class="display-4">Lorem, ipsum.</h2>
                         </div>
                         <div class="donate-info_text">
-                            <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum nesciunt, praesentium similique dolore fugiat amet provident a autem sapiente iusto omnis, quos perspiciatis est blanditiis quaerat. Perferendis totam sequi necessitatibus.</p>
+                            <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum nesciunt,
+                                praesentium similique dolore fugiat amet provident a autem sapiente iusto omnis, quos
+                                perspiciatis est blanditiis quaerat. Perferendis totam sequi necessitatibus.</p>
                         </div>
                     </div>
                     <div class="donate-methods col-md-6 col-12 mt-3 mt-md-0">
                         <ul class="nav nav-tabs" id="myTab" role="tablist">
                             <li class="nav-item">
-                              <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Lorem</a>
+                                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab"
+                                    aria-controls="home" aria-selected="true">Lorem</a>
                             </li>
                             <li class="nav-item">
-                              <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Lorem</a>
+                                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
+                                    aria-controls="profile" aria-selected="false">Lorem</a>
                             </li>
                             <li class="nav-item">
-                              <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Lorem</a>
+                                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab"
+                                    aria-controls="contact" aria-selected="false">Lorem</a>
                             </li>
-                          </ul>
-                          <div class="tab-content" id="myTabContent">
-                            <div class="tab-pane fade show active p-2" id="home" role="tabpanel" aria-labelledby="home-tab">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae repellat mollitia dolores iste voluptatem ducimus ut possimus dicta explicabo doloremque!</div>
-                            <div class="tab-pane fade p-2" id="profile" role="tabpanel" aria-labelledby="profile-tab">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi animi explicabo odio nostrum ad pariatur, corrupti veniam, consectetur quae labore, rem delectus voluptas. Quia voluptatibus cumque dolorum, quidem rem suscipit!</div>
-                            <div class="tab-pane fade p-2" id="contact" role="tabpanel" aria-labelledby="contact-tab">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum, itaque dignissimos nesciunt dicta cupiditate facere delectus, labore doloribus excepturi facilis quidem laborum quisquam maiores id!</div>
-                          </div>
+                        </ul>
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active p-2" id="home" role="tabpanel"
+                                aria-labelledby="home-tab">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                Repudiandae repellat mollitia dolores iste voluptatem ducimus ut possimus dicta
+                                explicabo doloremque!</div>
+                            <div class="tab-pane fade p-2" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi animi explicabo odio
+                                nostrum ad pariatur, corrupti veniam, consectetur quae labore, rem delectus voluptas.
+                                Quia voluptatibus cumque dolorum, quidem rem suscipit!</div>
+                            <div class="tab-pane fade p-2" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum, itaque dignissimos
+                                nesciunt dicta cupiditate facere delectus, labore doloribus excepturi facilis quidem
+                                laborum quisquam maiores id!</div>
+                        </div>
                     </div>
                 </div>
-            </section>
+            </section> -->
         </div>
     </main>
-    <footer class="footer">
+    <footer class="footer" id="contacts">
         <div class="container">
-            <div class="footer-wrapper pt-3 pb-3 row align-items-center">
-                <div class="footer-info col-md-5 col-12">
-                    <div class="footer-title">
-                        <h4 class="display-4">Lorem, ipsum dolor.</h4>
-                    </div>
-                    <div class="footer-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, veritatis!</div>
+            <div class="footer-wrapper pt-3 pb-5">
+                <div class="footer-title">
+                    <h4 class="display-4 text-uppercase font-weight-bold">Контакты</h4>
                 </div>
-                <div class="footer-links-wrapper col-md-4 col-12 d-flex flex-column align-items-center mt-3 mt-mb-0">
-                    <div class="footer-links_text lead">
-                        Lorem, ipsum dolor.
+                <div class="row align-items-center">
+                    <div class="footer-info col-md-5 col-12">
+                        <div class="footer-description">
+                            С любыми вопросами о кампании обращайтесь в штаб Навального в Тамбове
+                        </div>
+                        <div class="footer-contacts">
+                            <div class="footer-contacts_phone mt-2">
+                                <a class="footer-contacts_link" href="tel:89084687476">
+                                    8 (908) 468-74-76
+                                </a>
+                            </div>
+                            <div class="footer-contacts_email mt-2">
+                                <a class="footer-contacts_link" href="mailto:info@tambov2020.ru">
+                                    info@tambov2020.ru
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="footer-links mt-2">
-                        <ul class="row align-items-center">
+                    <div
+                        class="footer-links-wrapper col-md-3 col-12 d-flex flex-column align-items-center mt-5 mt-md-0">
+                        <div class="footer-links_text lead">
+                            Подписывайтесь на наши соцсети и следите за ходом кампании
+                        </div>
+                        <div class="footer-links mt-2">
+                            <ul class="row align-items-center">
+                                <li><a href=""><i class="fab fa-vk"></i></a></li>
+                                <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                                <li><a href=""><i class="fab fa-facebook"></i></a></li>
+                                <li><a href=""><i class="fab fa-viber"></i></a></li>
+                                <li><a href=""><i class="fab fa-telegram"></i></a></li>
+                                <li><a href=""><i class="fab fa-whatsapp"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-share col-md-4 col-12 mt-5 mt-md-0">
+                        <p class="lead">
+                            Чем больше людей узнают о кампании, тем больше у нас шансов на успех
+                        </p>
+                        <div class="header-share-btn mt-3" id="dropdownMenuButton" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            <div class="button-share">
+                                <a href="#support">Поделиться</a>
+                            </div>
+                        </div>
+                        <div class="header-share_links dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <ul class="row mt-2">
+                                <li><a href=""><i class="fab fa-vk"></i></a></li>
+                                <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                                <li><a href=""><i class="fab fa-facebook"></i></a></li>
+                                <li><a href=""><i class="fab fa-viber"></i></a></li>
+                                <li><a href=""><i class="fab fa-telegram"></i></a></li>
+                                <li><a href=""><i class="fab fa-whatsapp"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="anna" class="modal">
+            <div class="modal-wrapper row align-items-center flex-column">
+                <div class="hero-video-wrapper col-12 mt-3 mt-md-0 p-0">
+                    <a class="hero-video_link" href="https://www.youtube.com/watch?v=Is1bfylXVHI">
+                        <div class="hero-video video-anna">
+                            <div class="hero-video-play">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 modal-name mt-3 font-weight-bold text-uppercase">
+                    Анна Нефёдова
+                </div>
+                <div class="col-12 modal-district">
+                    Избирательный округ № 12
+                </div>
+                <div class="col-12 modal-contacts team-item_contacts d-flex flex-column mt-3">
+                    <div>
+                        <i class="far fa-envelope mr-2"></i>
+                        <a href="mailto:nefedova@navalny-team.org">nefedova@navalny-team.org</a>
+                    </div>
+                    <div>
+                        <i class="fas fa-phone mr-2 mt-2"></i>
+                        <a href="tel:+7 960 670 15 60">+7 960 670 15 60</a>
+                    </div>
+                </div>
+                <div class="row col-12">
+                    <div class="col-12 col-md-6 modal-support-btn header-share-btn mt-3">
+                        <a class="button-share" href="#support-anna" rel="modal:open">
+                            Поддержать
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-6 team-item_links d-flex justify-content-center mt-2 align-items-center">
+                        <ul class="row">
                             <li><a href=""><i class="fab fa-vk"></i></a></li>
                             <li><a href=""><i class="fab fa-twitter"></i></a></li>
                             <li><a href=""><i class="fab fa-facebook"></i></a></li>
-                            <li><a href=""><i class="fab fa-viber"></i></a></li>                                            
+                            <li><a href=""><i class="fab fa-viber"></i></a></li>
                             <li><a href=""><i class="fab fa-telegram"></i></a></li>
                             <li><a href=""><i class="fab fa-whatsapp"></i></a></li>
                         </ul>
                     </div>
                 </div>
+                <div class="col-12 modal-biography mt-3">
+                    <div class="modal-title text-uppercase font-weight-bold">
+                        Биография
+                    </div>
+                    <p class="lead mt-3">
+                        Я родилась в Тамбове в 1976 году. Училась в школе № 9 и окончила Тамбовский государственный
+                        технический университет по специальности инженер-системотехник. После университета долгое время
+                        работала начальником отдела продаж в оптовой компании, руководила большим коллективом.
+                        Воспитываю семнадцатилетнюю дочь. С 2019 года работаю в штабе Алексея Навального: расследую
+                        коррупцию в сфере госзакупок. Мне не раз удавалось отменить закупки дорогих машин для
+                        чиновников, чтобы сэкономить бюджетные деньги для более важных затрат.
+                    </p>
+                </div>
+                <div class="col-12 modal-programm mt-3">
+                    <div class="modal-title text-uppercase font-weight-bold">
+                        Программа
+                    </div>
+                    <p class="lead mt-3">
+                        С 2006 года я живу на севере города. Тогда район только начинал застраиваться. Он развивался на
+                        моих глазах, и я вижу все его проблемы и перспективы. В 2020 году пройдут выборы в Тамбовскую
+                        городскую думу, и я решила принять в них участие. Я хочу вместе с жителями делать город лучше,
+                        удобнее, комфортнее. И считаю, что есть проблемы, которые нужно решать в первую очередь.
+                    </p>
+                    <div class="modal-programm-stage text-uppercase font-weight-bold mt-4">
+                        1. ШКОЛЫ — ПЕРВАЯ НЕОБХОДИМОСТЬ ДЛЯ ОКРУГА
+                    </div>
+                    <p class="lead mt-3">
+                        В северной части города катастрофически не хватает школ, и родители не могут отправить детей в
+                        первый класс. Места в ближайших крупных школах закончились уже через два часа после начала
+                        приема заявлений от родителей. Чтобы решить проблему, нужно построить две большие школы уровня
+                        Сколково в общей сложности на 2500 мест. На севере сейчас не строится ни одной. Этот вопрос
+                        нужно выносить на обсуждение городской думы и добиваться финансирования из бюджета области и на
+                        федеральном уровне. Именно этим я прежде всего собираюсь заняться в качестве депутата.
+                    </p>
+                    <div class="modal-programm-stage text-uppercase font-weight-bold mt-4">
+                        2. УДОБНЫЕ ДВОРЫ, А НЕ ТЕСНЫЕ МУРАВЕЙНИКИ
+                    </div>
+                    <p class="lead mt-3">
+                        Северная часть города — одна из самых густонаселенных в Тамбове. Здесь живут в основном молодые
+                        семьи. Почти в каждой семье сейчас есть автомобиль, поэтому парковок не хватает.
+                    </p>
+                    <p class="lead mt-3">
+                        Я считаю, что нужно искать решение этой проблемы, применяя положительный опыт других городов и
+                        современные технологии. Таким решением могут стать как подземные, надземные и газонные парковки,
+                        так и платные: парковочные места можно сдавать в аренду жителям соседних домов, а полученные
+                        деньги тратить на благоустройство. Кроме того, для новых построек необходимо менять нормативы
+                        градостроительного проектирования — этим занимается как раз городская дума.
+                    </p>
+                    <div class="modal-programm-stage text-uppercase font-weight-bold mt-4">
+                        3. СЕВЕРУ ГОРОДА НУЖНО БОЛЬШЕ ЗЕЛЕНИ
+                    </div>
+                    <p class="lead mt-3">
+                        В нашем округе живет очень много людей, но мест для отдыха и занятий спортом недостаточно. Летом
+                        вместо кислорода мы дышим раскаленным асфальтом. Нам нужно больше парков, скверов, газонов и
+                        просто растений — деревьев, кустарников, цветов. Наша жизнь в городе должна быть не только
+                        удобной благодаря доступности магазинов, школ, детских садов и парковок, но и экологичной, ведь
+                        это залог нашего здоровья и здоровья наших детей.
+                    </p>
+                    <div class="modal-programm-stage text-uppercase font-weight-bold mt-4">
+                        4. КАЧЕСТВО ЖКХ ДОЛЖНО СООТВЕТСТВОВАТЬ СТОИМОСТИ
+                    </div>
+                    <p class="lead mt-3">
+                        Сейчас мы платим за услуги ЖКХ слишком много. Качество этих услуг не соответствует цене.
+                        Управляющие компании и поставщики ресурсов часто завышают цены на свои услуги, иногда просто
+                        обманывая своих потребителей. В сфере ЖКХ нужен постоянный контроль. В моем округе есть проблемы
+                        и с водоснабжением, и с отоплением, и с работой управляющих компаний. Помощь в решении проблем
+                        ЖКХ — одна из основных задач депутатов, и я считаю это своей работой.
+                    </p>
+                    <div class="modal-programm-stage text-uppercase font-weight-bold mt-4">
+                        5. В ГОРДУМЕ ДОЛЖНО БЫТЬ БОЛЬШЕ НЕЗАВИСИМЫХ ДЕПУТАТОВ
+                    </div>
+                    <p class="lead mt-3">
+                        Сейчас в городской думе большинство депутатов состоят в партии «Единая Россия». Они дружно
+                        голосуют за выдачу премий своим коллегам, за передачу земель под застройку многоэтажками вместо
+                        парков. Они выполняют приказы своего партийного руководства или отстаивают бизнес-интересы своих
+                        однопартийцев. Я не состою ни в какой партии, и у меня нет бизнеса. Поэтому отчитываться за
+                        принятие важных для горожан решений я буду только перед своими избирателями.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="support-anna" class="modal">
+            <div class="wrapper">
+                <div class="support-modal">
+                    <div class="support-title text-uppercase font-weight-bold">
+                        ПОДДЕРЖАТЬ КАМПАНИЮ АННЫ НЕФЕДОВОЙ
+                    </div>
+                    <p class="lead mb-3 mt-3">
+                        Перед нами, независимыми кандидатами, стоит немало задач. Нам нужно собирать подписи, печатать
+                        листовки, организовывать встречи с избирателями. Чтобы эффективно вести кампанию, нам необходима
+                        ваша поддержка.
+                    </p>
+                    <p class="lead">
+                        По закону оплачивать печать листовок или баннеров мы можем только со специальных избирательных
+                        счетов. Поэтому пожертвования мы принимаем исключительно на них. Чтобы сделать пожертвование на
+                        нашу кампанию, вы должны быть старше 18 лет. А еще необходимо правильно указать назначение
+                        платежа. Короткая и понятная инструкция поможет это сделать.
+                    </p>
+                </div>
+                <div class="support-sberbank">
+                    <div class="modal-title text-uppercase font-weight-bold mt-4">
+                        ПЕРЕВОД ЧЕРЕЗ «СБЕРБАНК ОНЛАЙН»
+                    </div>
+                    <div class="support-sberbank_way text-uppercase font-weight-bold mt-4">
+                        ЧЕРЕЗ ПРИЛОЖЕНИЕ «СБЕРБАНК ОНЛАЙН»:
+                    </div>
+                    <ul>
+                        <li>1. Зайдите в раздел «Переводы и платежи».</li>
+                        <li>2. В строке «Оплата покупок и услуг» выберите регион «Тамбов».</li>
+                        <li>3. Нажмите кнопку «Сохранить» (потом регион можно будет поменять обратно).</li>
+                        <li>4. В поле поиска введите Нефедова Анна Геннадиевна, перейдите по ссылке и нажмите на
+                            «Добровольное пожертвование».</li>
+                        <li>5. Выберите назначение платежа «Пожертвование» и нажмите «Продолжить».</li>
+                        <li>6. Выберите регион регистрации и введите адрес проживания, а затем проведите оплату.</li>
+                    </ul>
+                </div>
+                <div class="support-details">
+                    <div class="modal-title text-uppercase font-weight-bold mt-4">
+                        ПЕРЕВЕСТИ ДЕНЬГИ ПО РЕКВИЗИТАМ
+                    </div>
+                    <div class="support-details_way text-uppercase font-weight-bold mt-4">
+                        ОТ ФИЗИЧЕСКИХ ЛИЦ (В ТОМ ЧИСЛЕ ИНДИВИДУАЛЬНЫХ ПРЕДПРИНИМАТЕЛЕЙ)
+                    </div>
+                    <p class="lead mt-2">
+                        Предельный размер пожертвований от одного физического лица в совокупности составляет 150 тысяч
+                        рублей. Жертвователь должен быть гражданином РФ старше 18 лет. Деньги можно отправить только
+                        банковским переводом — через любое отделение любого банка (перевод без открытия счета) или через
+                        интернет-банк с личного счета жертвователя.
+                    </p>
+                    <ul class="mt-3">
+                        <li class="mt-2">
+                            <span class="text-secondary">Получатель платежа:</span>Нефедова Анна Геннадиевна
+                        </li>
+                        <li class="mt-2">
+                            <span class="text-secondary">Расчётный счёт:</span>40810810061009000681
+                        </li>
+                        <li class="mt-2">
+                            <span class="text-secondary">Банк:</span>ТАМБОВСКОЕ ОТДЕЛЕНИЕ N8594 ПАО СБЕРБАНК
+                        </li>
+                        <li class="mt-2">
+                            <span class="text-secondary">БИК:</span>046850649
+                        </li>
+                        <li class="mt-2">
+                            <span class="text-secondary">ИНН:</span>683301574298
+                        </li>
+                        <li class="mt-2">
+                            <span class="text-secondary">Корр. счет:</span>30101810800000000649
+                        </li>
+                        <li class="mt-2">
+                            <span class="text-secondary">Назначение платежа (пример):</span>Добр. пожертвование в
+                            избирательный фонд от: Иванов Иван Иванович, гражд. РФ, д. р. 00.00.0000, пасп. 0000 000
+                            000, г. Тамбов, ул. Красноармейская д. 1 кв. 1
+                        </li>
+                    </ul>
+                </div>
+                <div class="support-entities">
+                    <div class="modal-title text-uppercase font-weight-bold mt-4">
+                        ОТ ЮРИДИЧЕСКИХ ЛИЦ
+                    </div>
+                    <p class="lead mt-3">
+                        Если вы хотите пожертвовать средства от своего юридического лица, то оно должно быть
+                        зарегистрировано не позднее 12.09.2019 г. При этом для юридических лиц установлено огромное
+                        количество ограничений, которые не так просто соблюсти. Поэтому, если вы хотите сделать
+                        пожертвование от имени юридического лица, целесообразно согласовать это с кандидатом по телефону
+                        +7 (960) 670-15-60. Вам помогут проверить отсутствие препятствий и правильно все оформить.
+                    </p>
+                </div>
             </div>
         </div>
     </footer>
     </div>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+    <script type="text/javascript" src="js/YouTubePopUp.jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 

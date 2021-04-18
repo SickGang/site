@@ -1,3 +1,6 @@
+$red: #ff4245;
+$blue: #5cb0c9;
+
 body {
     font-family: "Source Sans Pro", sans-serif;
     font-size: 18px;
@@ -20,6 +23,7 @@ button {
     background-color: #fff;
     z-index: 99;
     padding: 30px 0px;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
     &-nav {
         li {
             margin-right: 10px;
@@ -41,15 +45,14 @@ button {
                     transition: background 0.3s linear;
                 }
                 &:hover::before {
-                    background: black;
+                    background: $red;
                 }
             }
         }
     }
     &-img {
         img {
-            max-width: 200px;
-            height: 100px;
+            max-width: 100%;
         }
     }
     &-share {
@@ -57,14 +60,22 @@ button {
         &-btn {
             position: relative;
             text-align: center;
-            width: 100px;
+            // width: 100px;
             cursor: pointer;
             padding: 10px;
-            border: 1px solid black;
-            &:hover {
-                background-color: black;
+            border: 1px solid $red;
+            background-color: $red;
+            a {
+                font-weight: bold;
                 color: white;
+            }
+            &:hover {
+                background-color: white;
+                color: black;
                 transition: background 0.3s ease-in-out;
+                a {
+                    color: black;
+                }
             }
         }
         a {
@@ -76,31 +87,40 @@ button {
 
 .hero {
     display: flex;
-    border-bottom: 2px solid #d9e7eb;
+    border-bottom: 2px solid $blue;
     &-button {
         cursor: pointer;
         width: 200px;
         margin-top: 25px;
         padding: 10px;
         color: white;
-        background-color: black;
-        border: 2px solid black;
+        background-color: $red;
+        border: 2px solid $red;
         font-weight: bold;
+        a {
+            color: white;
+        }
         &:hover {
             color: black;
             transition: background 0.3s ease-in-out;
             background-color: #fff;
+            a {
+                color: black;
+            }
         }
     }
     &-video {
         position: relative;
         cursor: pointer;
         height: 300px;
-        background-color: black;
+        background-image: url("../img/hero-img_preview.png");
+        background-repeat: no-repeat;
+        background-position: 50%;
+        background-size: cover;
         &-wrapper {
             padding-left: 30px;
         }
-        a {
+        &-play {
             position: absolute;
             display: flex;
             align-items: center;
@@ -122,7 +142,7 @@ button {
     &-accordion {
         ul {
             li {
-                border-top: 2px solid #d9e7eb;
+                border-top: 2px solid $blue;
                 padding: 15px 0px;
                 i {
                     transform: none;
@@ -133,7 +153,7 @@ button {
                     color: black;
                     text-transform: uppercase;
                     &:hover {
-                        color: #1499bf;
+                        color: $red;
                     }
                 }
             }
@@ -152,7 +172,7 @@ li.active {
 }
 
 .team {
-    border-top: 2px solid #d9e7eb;
+    border-top: 2px solid $blue;
     &-item {
         align-items: center;
         &_video {
@@ -181,6 +201,9 @@ li.active {
         &_contacts {
             a {
                 color: black;
+                &:hover {
+                    color: $blue;
+                }
             }
         }
         &_links {
@@ -194,40 +217,57 @@ li.active {
         &_btn-help {
             cursor: pointer;
             padding: 10px;
-            border: 1px solid black;
-            &:hover {
-                background-color: black;
+            color: white;
+            font-weight: bold;
+            background-color: $red;
+            border: 1px solid $red;
+            a {
                 color: white;
+            }
+            &:hover {
+                background-color: white;
+                color: black;
                 transition: background 0.3s ease-in-out;
+                a {
+                    color: black;
+                }
             }
         }
     }
 }
 
 .support {
-    border-top: 2px solid #d9e7eb;
+    border-top: 2px solid $blue;
     &-form {
         button {
-            width: 100px;
+            // width: 100px;
             cursor: pointer;
             padding: 10px;
-            border: 1px solid black;
+            font-weight: bold;
+            color: white;
+            background-color: $red;
+            border: 1px solid $red;
             &:hover {
-                background-color: black;
-                color: white;
+                background-color: white;
+                color: black;
                 transition: background 0.3s ease-in-out;
             }
         }
     }
 }
-
+.form-control {
+    border-color: $blue;
+}
+.offert-link {
+    color: $red;
+}
 .donate {
-    border-top: 2px solid #d9e7eb;
+    border-top: 2px solid $blue;
     padding: 50px 0px;
 }
 .footer {
     &-wrapper {
-        border-top: 2px solid #d9e7eb;
+        border-top: 2px solid $blue;
         ul {
             li {
                 margin-right: 5px;
@@ -257,8 +297,30 @@ li.active {
 .dropdown-toggle {
     cursor: pointer;
     padding: 10px;
-    border: 1px solid black;
+    border: 2px solid $red;
     border-radius: 0 !important;
+}
+
+.footer-contacts_link {
+    color: $blue;
+    font-weight: bold;
+    &:hover {
+        color: $red;
+    }
+}
+.modal {
+    max-width: none;
+    height: 70% !important;
+    overflow-y: scroll;
+}
+
+.modal a.close-modal {
+    top: 10px !important;
+    right: 10px !important;
+}
+.modal-title {
+    border-bottom: 2px solid $blue;
+    font-size: 26px;
 }
 .fa-vk {
     color: #366aa6;
@@ -279,8 +341,40 @@ li.active {
     color: #7d3daf;
 }
 
+.video {
+    &-anna {
+        background-image: url("../img/blue.jpg");
+    }
+}
+
+.modal-wrapper {
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+.support-title {
+    font-size: 30px;
+}
+
+@media (max-width: 900px) {
+    .modal-wrapper {
+        max-width: none;
+        margin: 0;
+    }
+}
+
 @media (max-width: 767px) {
     .team-item {
         justify-content: center;
+    }
+    .company-accordion ul li a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 600px) {
+    h1,
+    h2 {
+        font-size: 3rem !important;
     }
 }
