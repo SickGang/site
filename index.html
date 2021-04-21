@@ -28,7 +28,6 @@
                         <li><a href="#team">Кандитаты</a></li>
                         <li><a href="#support">Поддержать</a></li>
                         <li><a href="#contacts">Контакты</a></li>
-                        <!-- <li><a href="#donate">Lorem</a></li> -->
                     </ul>
                     <div class="dropdown show d-block d-lg-none">
                         <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
@@ -72,7 +71,8 @@
                     <div class="hero-description">
                         <h2 class="display-4 text-uppercase font-weight-bold text-center">Против коррупции и «Единой
                             России»</h2>
-                        <p class="lead">В сентябре пройдут выборы в Тамбовскую городскую думу. Сейчас 29 мест из 36 в
+                        <p class="lead mt-3 font-weight-bold">В сентябре пройдут выборы в Тамбовскую городскую думу.
+                            Сейчас 29 мест из 36 в
                             ней занимают единороссы. Вместо того чтобы вкладывать бюджетные деньги в больницы, в
                             инфраструктуру, поддержку многодетных семей и пенсионеров, они растрачивают их впустую. Мы
                             идем на выборы, чтобы это изменить.</p>
@@ -230,44 +230,44 @@
                         <div class="team-item mb-3 row">
                             <a class="hero-video_link" href="https://www.youtube.com/watch?v=Is1bfylXVHI">
                                 <div class="team-item_video mr-md-5 mr-0">
-                                        <div class="hero-video video-anna">
-                                            <div class="hero-video-play">
-                                                <i class="fas fa-play"></i>
-                                            </div>
+                                    <div class="hero-video video-anna">
+                                        <div class="hero-video-play">
+                                            <i class="fas fa-play"></i>
                                         </div>
+                                    </div>
                                 </div>
                             </a>
                             <div class="team-item_info">
-                                <div class="team-item_name mt-2 text-uppercase font-weight-bold">
-                                    Анна Нефёдова
+                                <div class="team-item_info-wrapper">
+                                    <div class="team-item_name mt-2 text-uppercase font-weight-bold">
+                                        Анна Нефёдова
+                                    </div>
+                                    <div class="team-item_district mt-2">
+                                        Избирательный округ №12
+                                    </div>
                                 </div>
-                                <div class="team-item_district mt-2">
-                                    Избирательный округ №12
-                                </div>
-                                <div class="team-item_contacts d-flex flex-column mt-3">
+                                <div class="team-item_contacts d-flex flex-column">
                                     <div><i class="far fa-envelope mr-2"></i><a
                                             href="mailto:nefedova@navalny-team.org">nefedova@navalny-team.org</a></div>
                                     <div><i class="fas fa-phone mr-2 mt-2"></i><a href="tel:+7 960 670 15 60">+7 960 670
                                             15 60</a></div>
                                 </div>
-                                <div class="team-item_links d-flex justify-content-center mt-2">
+                                <div class="team-item_links d-flex">
                                     <ul class="row">
-                                        <li><a href=""><i class="fab fa-vk"></i></a></li>
                                         <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                                        <li><a href=""><i class="fab fa-instagram"></i></a></li>
                                         <li><a href=""><i class="fab fa-facebook"></i></a></li>
-                                        <li><a href=""><i class="fab fa-viber"></i></a></li>
                                         <li><a href=""><i class="fab fa-telegram"></i></a></li>
-                                        <li><a href=""><i class="fab fa-whatsapp"></i></a></li>
                                     </ul>
                                 </div>
-                                <div class="team-item_btn mt-2">
+                                <div class="team-item_btn mt-2 row">
                                     <a href="#anna" rel="modal:open">
                                         <div class="team-item_btn-show-more text-center">
                                             Узнать больше
                                         </div>
                                     </a>
                                     <a href="#support-anna" rel="modal:open">
-                                        <div class="team-item_btn-help mt-3 text-center">
+                                        <div class="team-item_btn-help ml-4 text-center">
                                             Поддержать
                                         </div>
                                     </a>
@@ -283,7 +283,7 @@
                         <div class="support-title">
                             <h2 class="display-4 text-uppercase font-weight-bold">Поддержите нас</h2>
                         </div>
-                        <div class="support-description">
+                        <div class="support-description mt-3">
                             <p class="lead">
                                 Чтобы получить допуск на выборы и победить на них, нам нужно собрать подписи, оформить
                                 документы и провести кампанию. И тут мы не справимся без вашей поддержки. Если вы хотите
@@ -304,7 +304,7 @@
                                 <input type="text" class="form-control mt-2" id="exampleInputPassword1" placeholder="">
                             </div>
                             <div class="form-group">
-                                <label for="exampleInputPassword1">ТЕЛЕФОН</label>
+                                <label for="exampleInputPassword1">КОНТАКТНЫЙ ТЕЛЕФОН</label>
                                 <input type="phone" class="form-control mt-2" id="exampleInputPassword1"
                                     placeholder="+7">
                             </div>
@@ -312,69 +312,171 @@
                                 <label for="exampleInputPassword1">E-MAIL</label>
                                 <input type="email" class="form-control mt-2" id="exampleInputPassword1" placeholder="">
                             </div>
-                            <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                <label class="form-check-label" for="exampleCheck1">Хочу оставить подпись</label>
+                            <div class="d-flex">
+                                <div class="form-check mr-3">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label text-uppercase font-weight-bold"
+                                        for="exampleCheck1">Хочу оставить подпись</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                                    <label class="form-check-label text-uppercase font-weight-bold"
+                                        for="exampleCheck2">Хочу стать волонтёром</label>
+                                </div>
                             </div>
                             <div class="form-check mt-3">
-                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                <label class="form-check-label" for="exampleCheck1">Хочу стать волонтёром</label>
-                            </div>
-                            <div class="form-check mt-3">
-                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                <label class="form-check-label" for="exampleCheck1">Я даю согласие на обработку моих
+                                <input type="checkbox" class="form-check-input" id="exampleCheck3">
+                                <label class="form-check-label" for="exampleCheck3">Я даю согласие на обработку моих
                                     персональных данных в объеме и на условиях, определенных <a class="offert-link"
                                         href="">офертой</a></label>
                             </div>
-                            <button type="submit" class="btn mt-3">Отправить контакты</button>
+                            <button type="submit" class="btn mt-3">Отправить</button>
                         </form>
                     </div>
                 </div>
             </section>
-            <!-- <section class="donate" id="donate">
+            <section class="donate" id="donate">
                 <div class="donate-wrapper row">
                     <div class="donate-info col-md-6 col-12">
                         <div class="donate-info_title">
-                            <h2 class="display-4">Lorem, ipsum.</h2>
+                            <h2 class="display-4 text-uppercase font-weight-bold">Поддержать деньгами</h2>
                         </div>
-                        <div class="donate-info_text">
-                            <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum nesciunt,
-                                praesentium similique dolore fugiat amet provident a autem sapiente iusto omnis, quos
-                                perspiciatis est blanditiis quaerat. Perferendis totam sequi necessitatibus.</p>
+                        <div class="donate-info_text mt-3">
+                            <p class="lead">Для ведения кампании нужны деньги — на листовки, кубы, сбор подписей и
+                                многое другое. Несмотря на рассказы пропагандистов, за мной не стоит Госдеп или
+                                спонсоры-олигархи. Я открыто собираю денежные средства в интернете и прошу всех людей,
+                                которые хотят перемен и которые хотят видеть в Госдуме новые лица, поддержать меня,
+                                подарив посильную сумму.
+                                Денежные средства собираются на карту главы моего штаба Ольги Ключниковой. Мои счета
+                                заблокированы из-за действий Евгения Пригожина, известного как «повар Путина».</p>
                         </div>
                     </div>
                     <div class="donate-methods col-md-6 col-12 mt-3 mt-md-0">
                         <ul class="nav nav-tabs" id="myTab" role="tablist">
                             <li class="nav-item">
-                                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab"
-                                    aria-controls="home" aria-selected="true">Lorem</a>
+                                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#card" role="tab"
+                                    aria-controls="home" aria-selected="true">Карта</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
-                                    aria-controls="profile" aria-selected="false">Lorem</a>
+                                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#number" role="tab"
+                                    aria-controls="profile" aria-selected="false">По номеру</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab"
-                                    aria-controls="contact" aria-selected="false">Lorem</a>
+                                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#account" role="tab"
+                                    aria-controls="contact" aria-selected="false">Счет</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#paypal" role="tab"
+                                    aria-controls="contact" aria-selected="false">PAYPAL</a>
                             </li>
                         </ul>
-                        <div class="tab-content" id="myTabContent">
-                            <div class="tab-pane fade show active p-2" id="home" role="tabpanel"
-                                aria-labelledby="home-tab">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                                Repudiandae repellat mollitia dolores iste voluptatem ducimus ut possimus dicta
-                                explicabo doloremque!</div>
-                            <div class="tab-pane fade p-2" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi animi explicabo odio
-                                nostrum ad pariatur, corrupti veniam, consectetur quae labore, rem delectus voluptas.
-                                Quia voluptatibus cumque dolorum, quidem rem suscipit!</div>
-                            <div class="tab-pane fade p-2" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum, itaque dignissimos
-                                nesciunt dicta cupiditate facere delectus, labore doloribus excepturi facilis quidem
-                                laborum quisquam maiores id!</div>
+                        <div class="tab-content mt-5" id="myTabContent">
+                            <div class="tab-pane fade show active p-2" id="card" role="tabpanel"
+                                aria-labelledby="home-tab">
+                                <p class="lead">
+                                    Пожертвования собираются на карту главы моего штаба Ольги Ключниковой. Мои счета заблокированы из-за действий Евгения Пригожина, известного как «повар Путина».
+                                </p>
+                                <div class="sberbank row mt-3">
+                                    <figure class="ml-3">
+                                        <img src="img/icon_sberbank.svg" alt="">
+                                    </figure>
+                                    <div class="pl-3">
+                                        <div class="font-weight-bold">
+                                            КАРТА СБЕРБАНКА
+                                        </div>
+                                        <div class="font-weight-bold">
+                                            4279 3806 7716 1665
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tinkoff row mt-3">
+                                    <figure class="ml-3">
+                                        <img src="img/tinkoff.jpg" style="width: 34px; height: 32px;" alt="">
+                                    </figure>
+                                    <div class="pl-3">
+                                        <div class="font-weight-bold">
+                                            КАРТА СБЕРБАНКА
+                                        </div>
+                                        <div class="font-weight-bold">
+                                            4279 3806 7716 1665
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="hero-button text-center w-50">
+                                    <a href="">Поддержать деньгами</a>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade p-2" id="number" role="tabpanel" aria-labelledby="profile-tab">
+                                <div class="row">
+                                    <div class="col-7">
+                                        <p class="lead">
+                                            Вы можете сделать перевод по номеру телефона через Систему быстрых платежей.
+                                        </p>
+                                        <p class="lead mt-3">
+                                            Пожертвования собираются на карту главы моего штаба Ольги Ключниковой. Мои счета заблокированы из-за действий Евгения Пригожина, известного как «повар Путина». 
+                                        </p> 
+                                    </div>
+                                    <div class="col-5">
+                                        <span>Номер телефона</span>
+                                        <div class="font-weight-bold">
+                                            +7 (916) 391-29-92
+                                        </div>
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="tab-pane fade p-2" id="account" role="tabpanel" aria-labelledby="contact-tab">
+                            <p class="lead">
+                                Пожертвования собираются на карту главы моего штаба Ольги Ключниковой. Мои счета заблокированы из-за действий Евгения Пригожина, известного как «повар Путина».
+                            </p>    
+                            <div class="sberbank row mt-3">
+                                <figure class="ml-3">
+                                    <img src="img/icon_sberbank.svg" alt="">
+                                </figure>
+                                <div class="pl-3">
+                                    <div class="font-weight-bold">
+                                        Счёт в Сбербанке
+                                    </div>
+                                    <div class="font-weight-bold">
+                                        <a class="requisites" href="">Смотреть реквизиты</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tinkoff row mt-3">
+                                <figure class="ml-3">
+                                    <img src="img/tinkoff.jpg" style="width: 34px; height: 32px;" alt="">
+                                </figure>
+                                <div class="pl-3">
+                                    <div class="font-weight-bold">
+                                        Счет в Тинькофф банке
+                                    </div>
+                                    <div class="font-weight-bold">
+                                        <a class="requisites" href="">Смотреть реквизиты</a>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="tab-pane fade p-2" id="paypal" role="tabpanel" aria-labelledby="contact-tab">
+                                <div class="row">
+                                    <div class="col-7">
+                                        <p class="lead">
+                                            Вы можете сделать пожертвование через PayPal с карты любого банка или со своего PayPal-счета.
+                                        </p>
+                                        <div class="hero-button text-center w-100">
+                                            <a href="">Поддержать деньгами</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-5">
+                                        <span>E-mail кошелька</span>
+                                        <div class="font-weight-bold">
+                                            olgachesare@gmail.com
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </section> -->
+            </section>
         </div>
     </main>
     <footer class="footer" id="contacts">
@@ -383,12 +485,12 @@
                 <div class="footer-title">
                     <h4 class="display-4 text-uppercase font-weight-bold">Контакты</h4>
                 </div>
-                <div class="row align-items-center">
-                    <div class="footer-info col-md-5 col-12">
-                        <div class="footer-description">
+                <div class="row mt-3">
+                    <div class="footer-info col-md-4 col-12">
+                        <div class="footer-description lead">
                             С любыми вопросами о кампании обращайтесь в штаб Навального в Тамбове
                         </div>
-                        <div class="footer-contacts">
+                        <div class="footer-contacts mt-3">
                             <div class="footer-contacts_phone mt-2">
                                 <a class="footer-contacts_link" href="tel:89084687476">
                                     8 (908) 468-74-76
@@ -402,26 +504,24 @@
                         </div>
                     </div>
                     <div
-                        class="footer-links-wrapper col-md-3 col-12 d-flex flex-column align-items-center mt-5 mt-md-0">
+                        class="footer-links-wrapper col-md-4 col-12 d-flex flex-column align-items-center mt-5 mt-md-0 justify-content-between">
                         <div class="footer-links_text lead">
                             Подписывайтесь на наши соцсети и следите за ходом кампании
                         </div>
                         <div class="footer-links mt-2">
                             <ul class="row align-items-center">
-                                <li><a href=""><i class="fab fa-vk"></i></a></li>
                                 <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                                <li><a href=""><i class="fab fa-instagram"></i></a></li>
                                 <li><a href=""><i class="fab fa-facebook"></i></a></li>
-                                <li><a href=""><i class="fab fa-viber"></i></a></li>
                                 <li><a href=""><i class="fab fa-telegram"></i></a></li>
-                                <li><a href=""><i class="fab fa-whatsapp"></i></a></li>
                             </ul>
                         </div>
                     </div>
-                    <div class="footer-share col-md-4 col-12 mt-5 mt-md-0">
+                    <div class="footer-share col-md-4 col-12 mt-5 mt-md-0 d-flex flex-column justify-content-between">
                         <p class="lead">
                             Чем больше людей узнают о кампании, тем больше у нас шансов на успех
                         </p>
-                        <div class="header-share-btn mt-3" id="dropdownMenuButton" data-toggle="dropdown"
+                        <div class="header-share-btn mt-3 mt-md-0" id="dropdownMenuButton" data-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false">
                             <div class="button-share">
                                 <a href="#support">Поделиться</a>
@@ -468,22 +568,18 @@
                         <a href="tel:+7 960 670 15 60">+7 960 670 15 60</a>
                     </div>
                 </div>
-                <div class="row col-12">
-                    <div class="col-12 col-md-6 modal-support-btn header-share-btn mt-3">
-                        <a class="button-share" href="#support-anna" rel="modal:open">
-                            Поддержать
-                        </a>
-                    </div>
-                    <div class="col-12 col-md-6 team-item_links d-flex justify-content-center mt-2 align-items-center">
-                        <ul class="row">
-                            <li><a href=""><i class="fab fa-vk"></i></a></li>
-                            <li><a href=""><i class="fab fa-twitter"></i></a></li>
-                            <li><a href=""><i class="fab fa-facebook"></i></a></li>
-                            <li><a href=""><i class="fab fa-viber"></i></a></li>
-                            <li><a href=""><i class="fab fa-telegram"></i></a></li>
-                            <li><a href=""><i class="fab fa-whatsapp"></i></a></li>
-                        </ul>
-                    </div>
+                <div class="col-12 team-item_links d-flex mt-2 align-items-center">
+                    <ul class="row">
+                        <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                        <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                        <li><a href=""><i class="fab fa-facebook"></i></a></li>
+                        <li><a href=""><i class="fab fa-telegram"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-12 modal-support-btn header-share-btn mt-3 w-25">
+                    <a class="button-share" href="#support-anna" rel="modal:open">
+                        Поддержать
+                    </a>
                 </div>
                 <div class="col-12 modal-biography mt-3">
                     <div class="modal-title text-uppercase font-weight-bold">

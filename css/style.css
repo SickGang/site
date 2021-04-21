@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 18px;
@@ -57,6 +58,7 @@ button {
 .header-share-btn {
   position: relative;
   text-align: center;
+  width: 100%;
   cursor: pointer;
   padding: 10px;
   border: 1px solid #ff4245;
@@ -81,7 +83,6 @@ button {
 
 .hero {
   display: flex;
-  border-bottom: 2px solid #5cb0c9;
 }
 .hero-button {
   cursor: pointer;
@@ -133,8 +134,9 @@ button {
 }
 
 .company-accordion ul li {
-  border-top: 2px solid #5cb0c9;
-  padding: 15px 0px;
+  padding: 15px 15px;
+  background-color: #eeeeee;
+  margin-bottom: 20px;
 }
 .company-accordion ul li i {
   transform: none;
@@ -157,16 +159,22 @@ li.active i {
   transform: rotate(180deg) !important;
 }
 
-.team {
-  border-top: 2px solid #5cb0c9;
-}
 .team-item {
   align-items: center;
+}
+.team-item_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 300px;
+}
+.team-item_name {
+  font-size: 26px;
 }
 .team-item_video {
   margin-right: 50px;
   width: 400px;
-  height: 270px;
+  height: 300px;
   background-color: black;
   position: relative;
   cursor: pointer;
@@ -215,9 +223,6 @@ li.active i {
   color: black;
 }
 
-.support {
-  border-top: 2px solid #5cb0c9;
-}
 .support-form button {
   cursor: pointer;
   padding: 10px;
@@ -232,22 +237,14 @@ li.active i {
   transition: background 0.3s ease-in-out;
 }
 
-.form-control {
-  border-color: #5cb0c9;
-}
-
 .offert-link {
   color: #ff4245;
 }
 
 .donate {
-  border-top: 2px solid #5cb0c9;
   padding: 50px 0px;
 }
 
-.footer-wrapper {
-  border-top: 2px solid #5cb0c9;
-}
 .footer-wrapper ul li {
   margin-right: 5px;
 }
@@ -283,7 +280,6 @@ li.active i {
 }
 
 .footer-contacts_link {
-  color: #5cb0c9;
   font-weight: bold;
 }
 .footer-contacts_link:hover {
@@ -330,6 +326,63 @@ li.active i {
   color: #7d3daf;
 }
 
+.form-check label::before {
+  content: "";
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+  border: 1px solid gray;
+}
+
+.form-check label::after {
+  content: "";
+  display: inline-block;
+  height: 6px;
+  width: 9px;
+  border-left: 2px solid;
+  border-bottom: 2px solid;
+  transform: rotate(-45deg);
+}
+
+.form-check input[type=checkbox] {
+  opacity: 0;
+}
+
+.form-check label {
+  position: relative;
+}
+
+.form-check label::before,
+.form-check label::after {
+  position: absolute;
+}
+
+/*Внешний блок*/
+.form-check label::before {
+  top: 3px;
+  left: -20px;
+}
+
+.form-check-label {
+  padding-left: 5px;
+}
+
+/*Галка*/
+.form-check label::after {
+  left: -16px;
+  top: 7px;
+}
+
+/*Прячем галку по умолчанию*/
+.form-check input[type=checkbox] + label::after {
+  content: none;
+}
+
+/*Показываем галку по состоянию checked*/
+.form-check input[type=checkbox]:checked + label::after {
+  content: "";
+}
+
 .video-anna {
   background-image: url("../img/blue.jpg");
 }
@@ -341,6 +394,37 @@ li.active i {
 
 .support-title {
   font-size: 30px;
+}
+
+.team-item_links i,
+.footer-links {
+  font-size: 36px;
+  margin-right: 10px;
+}
+
+.nav-tabs {
+  background: #eeeeee;
+  padding: 20px;
+}
+
+.nav-link {
+  text-transform: uppercase;
+  color: #9ca3b0;
+  font-weight: bold;
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+  color: black !important;
+  background-color: #eeeeee;
+  border: none;
+  border-bottom: 4px solid #5cb0c9;
+}
+
+.requisites {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #5cb0c9;
 }
 
 @media (max-width: 900px) {

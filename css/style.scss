@@ -60,7 +60,7 @@ button {
         &-btn {
             position: relative;
             text-align: center;
-            // width: 100px;
+            width: 100%;
             cursor: pointer;
             padding: 10px;
             border: 1px solid $red;
@@ -87,7 +87,6 @@ button {
 
 .hero {
     display: flex;
-    border-bottom: 2px solid $blue;
     &-button {
         cursor: pointer;
         width: 200px;
@@ -142,8 +141,9 @@ button {
     &-accordion {
         ul {
             li {
-                border-top: 2px solid $blue;
-                padding: 15px 0px;
+                padding: 15px 15px;
+                background-color: #eeeeee;
+                margin-bottom: 20px;
                 i {
                     transform: none;
                     margin-left: 10px;
@@ -172,13 +172,21 @@ li.active {
 }
 
 .team {
-    border-top: 2px solid $blue;
     &-item {
         align-items: center;
+        &_info {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 300px;
+        }
+        &_name {
+            font-size: 26px;
+        }
         &_video {
             margin-right: 50px;
             width: 400px;
-            height: 270px;
+            height: 300px;
             background-color: black;
             position: relative;
             cursor: pointer;
@@ -237,10 +245,8 @@ li.active {
 }
 
 .support {
-    border-top: 2px solid $blue;
     &-form {
         button {
-            // width: 100px;
             cursor: pointer;
             padding: 10px;
             font-weight: bold;
@@ -255,19 +261,15 @@ li.active {
         }
     }
 }
-.form-control {
-    border-color: $blue;
-}
+
 .offert-link {
     color: $red;
 }
 .donate {
-    border-top: 2px solid $blue;
     padding: 50px 0px;
 }
 .footer {
     &-wrapper {
-        border-top: 2px solid $blue;
         ul {
             li {
                 margin-right: 5px;
@@ -302,7 +304,6 @@ li.active {
 }
 
 .footer-contacts_link {
-    color: $blue;
     font-weight: bold;
     &:hover {
         color: $red;
@@ -341,6 +342,62 @@ li.active {
     color: #7d3daf;
 }
 
+.form-check label::before {
+    content: "";
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    border: 1px solid gray;
+}
+
+.form-check label::after {
+    content: "";
+    display: inline-block;
+    height: 6px;
+    width: 9px;
+    border-left: 2px solid;
+    border-bottom: 2px solid;
+    transform: rotate(-45deg);
+}
+
+.form-check input[type="checkbox"] {
+    opacity: 0;
+}
+
+.form-check label {
+    position: relative;
+}
+
+.form-check label::before,
+.form-check label::after {
+    position: absolute;
+}
+
+/*Внешний блок*/
+.form-check label::before {
+    top: 3px;
+    left: -20px;
+}
+
+.form-check-label {
+    padding-left: 5px;
+}
+
+/*Галка*/
+.form-check label::after {
+    left: -16px;
+    top: 7px;
+}
+
+/*Прячем галку по умолчанию*/
+.form-check input[type="checkbox"] + label::after {
+    content: none;
+}
+
+/*Показываем галку по состоянию checked*/
+.form-check input[type="checkbox"]:checked + label::after {
+    content: "";
+}
 .video {
     &-anna {
         background-image: url("../img/blue.jpg");
@@ -354,6 +411,37 @@ li.active {
 
 .support-title {
     font-size: 30px;
+}
+
+.team-item_links i,
+.footer-links {
+    font-size: 36px;
+    margin-right: 10px;
+}
+
+.nav-tabs {
+    background: #eeeeee;
+    padding: 20px;
+}
+
+.nav-link {
+    text-transform: uppercase;
+    color: #9ca3b0;
+    font-weight: bold;
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+    color: black !important;
+    background-color: #eeeeee;
+    border: none;
+    border-bottom: 4px solid $blue;
+}
+
+.requisites {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: $blue;
 }
 
 @media (max-width: 900px) {
