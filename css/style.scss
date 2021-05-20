@@ -84,6 +84,11 @@ button {
             margin-right: 10px;
             font-size: 20px;
         }
+        &_links {
+            ul li a i {
+                font-size: 30px;
+            }
+        }
     }
 }
 
@@ -280,6 +285,7 @@ li.active {
     }
 }
 .footer {
+    background-color: #eeeeee;
     &-wrapper {
         ul {
             li {
@@ -303,8 +309,10 @@ li.active {
     color: white;
 }
 .nav-link:hover {
-    background-color: black;
-    color: white;
+    // background-color: black;
+    // color: white;
+    color: black;
+    border-bottom: 4px solid #5cb0c9 !important;
     transition: background 0.3s ease-in-out;
 }
 .dropdown-toggle {
@@ -433,7 +441,9 @@ li.active {
     font-size: 36px;
     margin-right: 10px;
 }
-
+.team-item_links i {
+    color: #6b6bff;
+}
 .nav-tabs {
     background: #eeeeee;
     padding: 10px 20px;

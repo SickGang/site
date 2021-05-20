@@ -82,6 +82,9 @@ button {
   margin-right: 10px;
   font-size: 20px;
 }
+.header-share_links ul li a i {
+  font-size: 30px;
+}
 
 .hero {
   display: flex;
@@ -258,6 +261,9 @@ li.active i {
   padding-top: 20px;
 }
 
+.footer {
+  background-color: #eeeeee;
+}
 .footer-wrapper ul li {
   margin-right: 5px;
 }
@@ -280,8 +286,8 @@ li.active i {
 }
 
 .nav-link:hover {
-  background-color: black;
-  color: white;
+  color: black;
+  border-bottom: 4px solid #5cb0c9 !important;
   transition: background 0.3s ease-in-out;
 }
 
@@ -417,6 +423,10 @@ li.active i {
 .footer-links {
   font-size: 36px;
   margin-right: 10px;
+}
+
+.team-item_links i {
+  color: #6b6bff;
 }
 
 .nav-tabs {
