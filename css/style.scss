@@ -94,6 +94,9 @@ button {
 
 .hero {
     display: flex;
+    &__buttons {
+        padding-left: 7px;
+    }
     &-button {
         cursor: pointer;
         width: 235px;
@@ -488,6 +491,12 @@ li.active {
     right: 20px;
     bottom: 5%;
 }
+.nav-tabs .nav-link {
+    border: none;
+}
+.team-item_links {
+    padding-left: 15px;
+}
 @media (max-width: 900px) {
     .modal-wrapper {
         max-width: none;
@@ -504,9 +513,7 @@ li.active {
     }
     .team-item_btn {
         flex-direction: column;
-    }
-    .team-item_info {
-        align-items: center;
+        padding-left: 15px;
     }
     .header-share_links.show {
         top: -10px !important;
