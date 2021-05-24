@@ -16,4 +16,20 @@ $(function () {
                 1000
             )
     })
+    $('.button-copy').click(function (e) {
+        const str = $(this).siblings('.value')[0].innerText
+        const el = document.createElement('textarea')
+        el.value = str
+        el.setAttribute('readonly', '')
+        el.style.position = 'absolute'
+        el.style.left = '-9999px'
+        document.body.appendChild(el)
+        el.select()
+        document.execCommand('copy')
+        document.body.removeChild(el)
+        $('.copied').show(200)
+        setTimeout(function () {
+            $('.copied').hide(200)
+        }, 3000)
+    })
 })

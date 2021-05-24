@@ -475,7 +475,19 @@ li.active {
 .display-4 {
     font-size: 3.1rem !important;
 }
-
+.button-copy {
+    cursor: pointer;
+}
+.copied {
+    display: none;
+    background-color: black;
+    padding: 15px;
+    color: white;
+    border-radius: 4px;
+    position: fixed;
+    right: 20px;
+    bottom: 5%;
+}
 @media (max-width: 900px) {
     .modal-wrapper {
         max-width: none;
@@ -492,6 +504,13 @@ li.active {
     }
     .team-item_btn {
         flex-direction: column;
+    }
+    .team-item_info {
+        align-items: center;
+    }
+    .header-share_links.show {
+        top: -10px !important;
+        left: -32px !important;
     }
 }
 
